@@ -29,4 +29,4 @@ kenan, houkenan0620@126.com
 ConanAFN is available under the MIT license. See the LICENSE file for more info.
 
 
-~~> 0.1.0 ConanAFN。对AFN进行二次封装，逐步增加新的方法，不断的进行更新。
+~~> 1.0.0 ConanAFN。对AFN进行二次封装，逐步增加新的方法，不断的进行更新。
