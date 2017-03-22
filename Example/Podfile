@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ConanAFN_Example' do
+  pod 'ConanAFN', :path => '../'
+
+  target 'ConanAFN_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

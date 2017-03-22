@@ -1,0 +1,1640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00C05031BBA5BA48A00FE41348F41BDA /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 85EEAD6156D29E0662E9CD5FF5BDDCC7 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02D5E46F5258EC904687E7A05E70D95F /* LocalConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1380276FD7351550A9024C53F3D6A9 /* LocalConnection.m */; };
+		071EBE4278E7F8994F6A8C3AA8BFFAFD /* ReachState.m in Sources */ = {isa = PBXBuildFile; fileRef = C3152059C99D5475580BB52F187DEA07 /* ReachState.m */; };
+		08382F5133783C3225A6A766586B709B /* ReachState.h in Headers */ = {isa = PBXBuildFile; fileRef = EEDA1985C42E5A62D076E93598291349 /* ReachState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0D1FFD30267C0776FD3E88EFF51E312F /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B3FDA51F06B21A133F5F20BF2F0E6717 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F35BC41F26B434B360DF61F4780E8D8 /* FSMStateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D354B07E6B7257960B49537C1D3A0A /* FSMStateUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		140F458AB7312414FC423FEED70A3733 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E94CCFCDAEC6A6C8B1291A931814F1 /* UIActivityIndicatorView+AFNetworking.m */; };
+		18490123E38B00B40F976F58D3559C17 /* ConanMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = E38F0A177B55B55EF2B1433DB42BD552 /* ConanMD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BE5D007BE7CDE5C57C89A6991E9647F /* RealReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8459F8162A0A8543E7B60EC32B68867D /* RealReachability.m */; };
+		1E2A6D057E20BE8F5ED3E594F7B8C286 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B590D13CA64E6809DC2E5668CBB1B7C /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EB9E7877710BBFE48FF53CB777D1DAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32B01CEE3805B6FE1EB393EFF53B2F7 /* Foundation.framework */; };
+		1F62854504A7ABB0E51A9F9904EB801C /* FSMEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A07DBDE507C96A26C2292A878E98CC25 /* FSMEngine.m */; };
+		23EFB184AD12FB1014FFC765CE0D710A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4E4CBF846AFD9998DE7977EB6CB0D4 /* Security.framework */; };
+		247D8B5B60A0EDA3599D5552F105E1C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32B01CEE3805B6FE1EB393EFF53B2F7 /* Foundation.framework */; };
+		29476636EA86BEFC4CB833D3BB7A52D7 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B82E039167036C19538EA57E433AF203 /* AFURLRequestSerialization.m */; };
+		2A9BA009D5F04594B3A710C78C2D3672 /* FSMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5221B041258E565F3020820929E35425 /* FSMDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2B0705CC26A4CBEE32A5A60284AED35B /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 35BE01DD813C7884953FE5C9AE48EE27 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EB4329745D2F7CF9894C669AA44BE59 /* ConanAfnBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC545EAD5615C2A1FB29436B892D41F /* ConanAfnBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FE4232A923C686333460C62FA69B9F9 /* ConanMacroDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = A8302B06152EA2A9AD97D47E987EED1F /* ConanMacroDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		314134EA6EF3BCEC5809B577398FD55D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32B01CEE3805B6FE1EB393EFF53B2F7 /* Foundation.framework */; };
+		32076D3DD644045CF79DFFEBB6BFF3F2 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBADE381FEDD4AE1370D45DBBEB450 /* UIButton+AFNetworking.m */; };
+		34C88657FE7ABE9F833623F94952D253 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 581EEEC6AA21FA6D33321DE10E7A40DD /* UIProgressView+AFNetworking.m */; };
+		35CBB7B255FD8D412AFCECBC4311A847 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DD90AA709DCC91709D1F8EE539382273 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EEE4AEA8F1D7637EC86C3DAE88BD4C1 /* ConanNetStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E383323BCD87D0E2CD62C3D5CFD06DD /* ConanNetStatus.m */; };
+		4442D8453D210EFC13CFE2CAF862ED1D /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 056EDF0BE9F3FC73A05D17964C2C389B /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45F802D04B3BE0CAEC586C2F3016027B /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A3616B9D79202739A20EEB8A3001CB /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47F04CBDF6C54B220F6AEECEF15264D5 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CA386478B8E10CCD2639C4E530434C /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		480C573649015CD3B8ED2BF773963387 /* ConanAfnManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CC1E4AF059F9CC8B3C3D9E64B0DA6DE4 /* ConanAfnManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4842C3047BD6A9A046916A2AEFDAA60B /* ConanSaveFilePath.m in Sources */ = {isa = PBXBuildFile; fileRef = FECD78E85BED4647D75EB7E1D35154F7 /* ConanSaveFilePath.m */; };
+		48C3F4D6D2C7D3A21F82FC6B6F5DC1F8 /* ConanAFN-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8E481E3A9076CA37BE9B1D2142F8 /* ConanAFN-dummy.m */; };
+		48D0B19238CF8CDCFE0E9C3D583CCC9F /* FSMEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD64CC3D6E445C9685BB466EFDF1026 /* FSMEngine.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4A9AC9E42BFD52E12ED779F2BE6C74D4 /* ConanShowAutoDismissAlertMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B551332381816C1522962B939BB4299E /* ConanShowAutoDismissAlertMessageView.m */; };
+		51047C1945103943F70BEADE83725630 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AD510298420F0BA2C6081C8B9375C2E /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5198560BC99CD46D0E7D8587C4AEAAF8 /* ReachStateWWAN.m in Sources */ = {isa = PBXBuildFile; fileRef = DF60954E0D0BBA8C141BF1FD0FB539E0 /* ReachStateWWAN.m */; };
+		5A1D34D104D42B1EE399E23BCD7935A0 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B127A087F84DD2F936185CD04538DC /* AFURLResponseSerialization.m */; };
+		649E78B5EA450FABDF5201E31F265FAB /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AD119FE4442DBEDEE8B813CAEDB86 /* AFNetworkActivityIndicatorManager.m */; };
+		6573AF9ABA59AC8D1F52B07088197F71 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = FF61E6598E6A5E3390FAE7AA8CEE4D12 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68A0194137F97DE65DF7F99275BB6768 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF327FB0BF23550EC0F52C9FEF4964C /* MBProgressHUD.m */; };
+		694F7AFC55575582264F7DE45CB605DD /* LocalConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AB2E8F59FE05D714FA69353A14CA87 /* LocalConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E51B5AC8FE3332D766DC00B19F3C6C3 /* ConanAfnResourceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A74FA9FEE140A3604043DD6CBC0985 /* ConanAfnResourceRequest.m */; };
+		72BE65E696A388D4CC0D75BE461FEF1B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CB2CAEC6F259B91A7E023B04796CFD /* MobileCoreServices.framework */; };
+		7A112C0F21A62CB6F1AA8D917A6EEA6C /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6512D8FF84478FD0DF98E7985737E567 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CE16B1BF75DF396768A0A3CFD968DB1 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6CA676F5849F48093DD894985C8E94 /* UIWebView+AFNetworking.m */; };
+		7FA0A624EE82A8A94D6B764696AD95EA /* Pods-ConanAFN_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E448FF4CE8FA58DCC616DDB1D4AF092B /* Pods-ConanAFN_Example-dummy.m */; };
+		831773F3C593C86018ECAFF33AD3CCA1 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA8678710F0AD037EDF9FE8FEC78FF53 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83C1055F934C7075B309295018AB8A2D /* Pods-ConanAFN_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E2FD1B173C4702F1E210407AB354B9 /* Pods-ConanAFN_Tests-dummy.m */; };
+		83E2DFC53F0D7C97FFD12DB6908A38FD /* ConanAfnManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDD87C9153A52F0DD90DAE6B8B0FF88 /* ConanAfnManager.m */; };
+		85DA7D8DB856AACC3B6A149CD6733CEC /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E245D4ED257C23CEA38B338AFE248B /* AFNetworking.framework */; };
+		887B6F49452AC6EC0CBF21BF327604D5 /* ConanAFN-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 471A5DAB64F8CC1CE11B7B654E7E9E84 /* ConanAFN-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		896F1951915F23ADDFF2B2EBC10BAABD /* ConanNetStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = AED8966D56B242BF43F04E0F4A0BFAA4 /* ConanNetStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D3331846EFA64BD330C2703F84BB438 /* PingFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = D95EC2E75510D78D166A64D3FC706731 /* PingFoundation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9213357645A9A0F4DB319C3253CC83C6 /* ReachStateUnloaded.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A6C130C52C0718C9C222D67DBAC9D6A /* ReachStateUnloaded.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9264BD69AFA8EE74F0D7F0EBD74F762F /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 762EED10537DF21864E6CBFF57988CEC /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92A82FF887B4541E99F9A3B4A7A33A7B /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3ADB7020BE0C90704EE76EEBAF35985 /* MBProgressHUD-dummy.m */; };
+		93DFC0CC12E763AE770017349EE009D1 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F8CC93F1E24A02510FBC25B508B89F /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		948458DC0A9308A2D8C018C37FB7BBDD /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 95BA7964397A9D509E6A00285EE38FB3 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9619C5256BC168F0DDA168B47F75EB30 /* ConanAfnDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B61A95D7437C4D1503B7FFBC3B948FC /* ConanAfnDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		996C1FD070FAE327E1540E88E406BD48 /* RealReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = E5C90AE6CBE68C242A33476D67F5FA1A /* RealReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B0E69392CEAEAF87BFB8139729681DA /* ReachStateUnReachable.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E6A7CD8EF0A01A4A6BE791205902B3 /* ReachStateUnReachable.m */; };
+		9B1089FE6EA9CD9CF23DFF5578F651DA /* ConanAfnResourceRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0228502A68980F97F5E58CBCB232BB /* ConanAfnResourceRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BE4576B5F1A30A59E1980946D617E30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32B01CEE3805B6FE1EB393EFF53B2F7 /* Foundation.framework */; };
+		9CC705B1A0BE7831DDEC950322451632 /* ConanSaveFilePath.h in Headers */ = {isa = PBXBuildFile; fileRef = E845F80FBC9365EE3A23040618FDD151 /* ConanSaveFilePath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F8A810CCB5D0955892A2BD4720EA34A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64401D818CC064BF29248468F89D046C /* QuartzCore.framework */; };
+		A08E560615FFC2255DA2F27F7951B8ED /* ReachStateWIFI.h in Headers */ = {isa = PBXBuildFile; fileRef = 0742836FFAE17084BAD9C7A9835AC2D0 /* ReachStateWIFI.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A0DDC9CF7E4D52B77E3F3D2FC1C6CD57 /* ReachStateWWAN.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CC6CFDC265E4FE66861999BF553555F /* ReachStateWWAN.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A3591DEDA776B48C026E7F9144981E58 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 782D4A678AD1BAFC19997560E317296F /* AFAutoPurgingImageCache.m */; };
+		A398D63C8DED664D99A864D79881A13C /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E188BE6D92CA7A88BAFC99932457BB /* AFImageDownloader.m */; };
+		A4B40104CE1A91EE92F533B33711ED65 /* ConanAfnAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E27437209F08AEE67332030551965B0 /* ConanAfnAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6F99E60FA3ACA56551005CD82C9048D /* ConanShowAutoDismissAlertMessageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 982AD6E089BC73595812D84A487A726A /* ConanShowAutoDismissAlertMessageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8E4A1C56766CE3303CBE38A7512624A /* PingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D4E768302764D8D9A445577C2B18A55 /* PingHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9095E52779C8CFC7C4620C67D66B041 /* ReachStateLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BEB92C00FCFFA89677B9C30CF962328 /* ReachStateLoading.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AE85C1A4BA6FAF64B30AB171F9FD688B /* ConanAfnAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E95E98124F602D26573D2E5F0CD9C8 /* ConanAfnAPI.m */; };
+		AE976B0E8E3DD81E4F49DBEF19D3C0AD /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 264E75A64C701EDE9F80BC7D075E389E /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEBCE11F6F6D91F6081E52A004B95350 /* PingFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F114DDF88A10164F2A55826F03ACF9 /* PingFoundation.m */; };
+		AF41CBF0399834B877DCA3A5C1238583 /* RealReachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0785FD47F0C6F3A5FA9EC17ECCD1D1B4 /* RealReachability.framework */; };
+		B16A078FC7FBC172A266A336AEF7F673 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EB689F3DA2D59D4CAFB5D9D1821418 /* UIRefreshControl+AFNetworking.m */; };
+		B5BCA82C032763FE03FB93D6FEB6DCF3 /* ReachStateWIFI.m in Sources */ = {isa = PBXBuildFile; fileRef = F00257B7E219CBA720225F0BFA00CF8F /* ReachStateWIFI.m */; };
+		BA2D29D9265012FAC7A88D9A8CCD9989 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9B68907EC24903D883F6A14888D84C /* CoreGraphics.framework */; };
+		BC22E83FBE012D2A1B6B72B886832AF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32B01CEE3805B6FE1EB393EFF53B2F7 /* Foundation.framework */; };
+		BE31C15BEF9439B85FDA811A3EA1E02D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9B68907EC24903D883F6A14888D84C /* CoreGraphics.framework */; };
+		C2C92A002BC091E76FDD2DCBFC98E947 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4107A0F7B7DB9D8F94DD137C16251990 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6F14C8469AB50C0B80F9FFAA6D2E9F3 /* FSMStateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C73A64D5D671390B82DF0EA1A79A22 /* FSMStateUtil.m */; };
+		CB3F1574B3BDD1F7D7F0550FE3FA2E62 /* Pods-ConanAFN_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A44BDF9423B84C82B566E57EE9AF2D3B /* Pods-ConanAFN_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE2EB8CE3176F8A1FAA78CC8786292CC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3760FA14F9AC74883495EAF8B825DABC /* SystemConfiguration.framework */; };
+		CEB2F0E229EF841D92C780C3FFDF1BEA /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C3AB05782FB28C647FFBC0E1B12860 /* AFSecurityPolicy.m */; };
+		CF287829627F26B2EB4382B897D06A0E /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B31EF3C71B68F516F2E5C41FB4C009 /* AFNetworking-dummy.m */; };
+		D4E80BD7EAAB83200183110578A80591 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8FA0937C10465FE77F80567034A7B7 /* AFURLSessionManager.m */; };
+		DA4161305702FF402EBE6367B2CD8E63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32B01CEE3805B6FE1EB393EFF53B2F7 /* Foundation.framework */; };
+		DC0731AE7933FD6E5A893F0594143035 /* ReachStateUnloaded.m in Sources */ = {isa = PBXBuildFile; fileRef = 55545D229E0294AB3F1EAC8735165569 /* ReachStateUnloaded.m */; };
+		DC3FDB10E5B44D47E1FA079431ED1572 /* ReachStateUnReachable.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A9AD29D1B0CF3E0D83C1EA53EC00FE /* ReachStateUnReachable.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DD887A93A200A87A51B3D00BD1B80D20 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5631355B4CDFEEF4992A1938F72A94 /* AFNetworkReachabilityManager.m */; };
+		E23B9A6F533461CB33C0FA6FB59E3AB2 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7AFD9C1B4B3E23CCFD6F9DB1F7E711 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27F57E19214315B8C8127FC88466D98 /* ConanAfnBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = C33070D462B7DD11E264B805D9CC9A12 /* ConanAfnBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2A3E462F8E02EE7203DB3C65C8733A2 /* ConanMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 143928A54F0DC48C225E4312F6A6F186 /* ConanMD5.m */; };
+		E2DECE099A458E9C59FA9F6F909431BD /* ReachStateLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6720AFAE087E202140B4C801299C5 /* ReachStateLoading.m */; };
+		E4DD678FD3BDB5F290359972B830037A /* ConanAfnBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C360E24C6B1EBF99D2E9C39FDCB2339F /* ConanAfnBase.m */; };
+		EAF16633DB3C992CF975BE4A2932D41C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EC301DD2B998E6D59B51443E301F10 /* AFHTTPSessionManager.m */; };
+		F181C5A4773E78FEB5B9301BE95C2ECD /* RealReachability-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CBCEE5587131101D3CFD26C67DEDAF6 /* RealReachability-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1CAA2EBDDFF558DEF98684F2479A7AF /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C530345EA1F264434991AAF0FF1AEC /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2D899C7AA0D7FC20160091BB9D31CF3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AF11F36ECD44A7D7F5C6F973165356 /* UIImageView+AFNetworking.m */; };
+		F2ED342EF4F39CDEB9D91D6578CBB558 /* PingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA508F2A210498AB065DCCBC7EFAF75C /* PingHelper.m */; };
+		F71647318CC207857F268F9224C87D0F /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E4CDDA12E433BE5585DF724563A574 /* MBProgressHUD.framework */; };
+		F84DD74BB7F612DE372F8C051420DF72 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B36E345CCB0DAC26EDE45BD9F0D5F0D /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA593E488E442E0AFAE19EC33B327E19 /* Pods-ConanAFN_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF7D43430BB3AACF6E60A5F839C3B362 /* Pods-ConanAFN_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA5A757C390ABAB525A779DE16528044 /* RealReachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D274E14AB2A17E67A3311FCE270DC895 /* RealReachability-dummy.m */; };
+		FC77EDF4DAB7F8B60B74F10AE2FE720F /* ConanAfnEnumType.h in Headers */ = {isa = PBXBuildFile; fileRef = 46490A156ABEE4FC62995C67C830DBFD /* ConanAfnEnumType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEF6EACE962EAE70E2EAC5F3C83EF7C8 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF5D000DE3CD0584B629987BDF89BC1 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF67D24F7FEDF468B58B8250202E5E97 /* ConanAfnDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 195E23A265C5BE2E0B338332D03A39E8 /* ConanAfnDataRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25E332BC80A0F6A3AE05A3A7DF23407D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4FEBE9046E7FFDB9A7F163C6FE36BB4;
+			remoteInfo = MBProgressHUD;
+		};
+		6E1EA38312D20631FDA0037AA384C589 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF671F7E57B92905F1CC91D036D6B4A7;
+			remoteInfo = AFNetworking;
+		};
+		89E536F177DD1A4A87DD2083D0672DDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1FFE08C521A89705123390DCCBBB8BD;
+			remoteInfo = RealReachability;
+		};
+		A1B5D1FE6EA1E34BB46218CC130AAEA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4FEBE9046E7FFDB9A7F163C6FE36BB4;
+			remoteInfo = MBProgressHUD;
+		};
+		F23F7C89309D40F94CDCFE9958EC7EEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1FFE08C521A89705123390DCCBBB8BD;
+			remoteInfo = RealReachability;
+		};
+		F521A032463F2F330B7D8ED2FB88568C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF671F7E57B92905F1CC91D036D6B4A7;
+			remoteInfo = AFNetworking;
+		};
+		F6570761E7CC5597BE3D0DD6836C3CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93C5383905ED2381742B9CBCF935FE5C;
+			remoteInfo = ConanAFN;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00C530345EA1F264434991AAF0FF1AEC /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		016E10082FC7C71F583644C8E8091152 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02A74FA9FEE140A3604043DD6CBC0985 /* ConanAfnResourceRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ConanAfnResourceRequest.m; sourceTree = "<group>"; };
+		034EF957A540E2485B8D8D9B0474F0DA /* ConanAFN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ConanAFN.framework; path = ConanAFN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		056EDF0BE9F3FC73A05D17964C2C389B /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		0742836FFAE17084BAD9C7A9835AC2D0 /* ReachStateWIFI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReachStateWIFI.h; path = RealReachability/FSM/ReachStateWIFI.h; sourceTree = "<group>"; };
+		076C6187E7FB42E2D457F550BBB76308 /* Pods-ConanAFN_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConanAFN_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0785FD47F0C6F3A5FA9EC17ECCD1D1B4 /* RealReachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RealReachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AF11F36ECD44A7D7F5C6F973165356 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		0B36E345CCB0DAC26EDE45BD9F0D5F0D /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		0CBCEE5587131101D3CFD26C67DEDAF6 /* RealReachability-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RealReachability-umbrella.h"; sourceTree = "<group>"; };
+		13E189CB2E1C4F3FB63E82AB815135C0 /* RealReachability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RealReachability.modulemap; sourceTree = "<group>"; };
+		143928A54F0DC48C225E4312F6A6F186 /* ConanMD5.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ConanMD5.m; sourceTree = "<group>"; };
+		160EB2AA055F791A39B3675DB16D923B /* ConanAFN.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ConanAFN.modulemap; sourceTree = "<group>"; };
+		16E6A7CD8EF0A01A4A6BE791205902B3 /* ReachStateUnReachable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReachStateUnReachable.m; path = RealReachability/FSM/ReachStateUnReachable.m; sourceTree = "<group>"; };
+		18B638B97B81D444FD2A97B39C60B9C5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		195E23A265C5BE2E0B338332D03A39E8 /* ConanAfnDataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ConanAfnDataRequest.m; sourceTree = "<group>"; };
+		1D0228502A68980F97F5E58CBCB232BB /* ConanAfnResourceRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ConanAfnResourceRequest.h; sourceTree = "<group>"; };
+		1E1380276FD7351550A9024C53F3D6A9 /* LocalConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LocalConnection.m; path = RealReachability/Connection/LocalConnection.m; sourceTree = "<group>"; };
+		20F8CC93F1E24A02510FBC25B508B89F /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		25A404D3D2A97086E0EF064217205CBB /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		25B31EF3C71B68F516F2E5C41FB4C009 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		264E75A64C701EDE9F80BC7D075E389E /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		2B60ECBA3CFC2834FC592CA83EFB74A6 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		2BEB92C00FCFFA89677B9C30CF962328 /* ReachStateLoading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReachStateLoading.h; path = RealReachability/FSM/ReachStateLoading.h; sourceTree = "<group>"; };
+		2DC28B64014275073936C38B60D2D5B4 /* Pods-ConanAFN_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ConanAFN_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2F7CF20E56A175FE12AE1E245C5A5FFB /* Pods-ConanAFN_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConanAFN_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		30C90363A63E564F608CE4E277650BFF /* Pods-ConanAFN_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ConanAFN_Tests-resources.sh"; sourceTree = "<group>"; };
+		30CBADE381FEDD4AE1370D45DBBEB450 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		31D354B07E6B7257960B49537C1D3A0A /* FSMStateUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSMStateUtil.h; path = RealReachability/FSM/FSMStateUtil.h; sourceTree = "<group>"; };
+		35BE01DD813C7884953FE5C9AE48EE27 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		3760FA14F9AC74883495EAF8B825DABC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		38E4FDBDDCAC60886F5E6090CFC65C89 /* ConanAFN.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ConanAFN.xcconfig; sourceTree = "<group>"; };
+		39E95E98124F602D26573D2E5F0CD9C8 /* ConanAfnAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ConanAfnAPI.m; sourceTree = "<group>"; };
+		3AD510298420F0BA2C6081C8B9375C2E /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		3C8FA0937C10465FE77F80567034A7B7 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		3CE2CA348147464E742650779DA09DEC /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		3D312A93399FC2C0B17AEB70EC209FA4 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		3D4E768302764D8D9A445577C2B18A55 /* PingHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PingHelper.h; path = RealReachability/Ping/PingHelper.h; sourceTree = "<group>"; };
+		4038109A1D8EE037F4E5CBD2009EC9F1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4107A0F7B7DB9D8F94DD137C16251990 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		44E8C5B611E6F2F4B3D15A41C8E7E8C4 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46490A156ABEE4FC62995C67C830DBFD /* ConanAfnEnumType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ConanAfnEnumType.h; sourceTree = "<group>"; };
+		46CA386478B8E10CCD2639C4E530434C /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		471A5DAB64F8CC1CE11B7B654E7E9E84 /* ConanAFN-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ConanAFN-umbrella.h"; sourceTree = "<group>"; };
+		4876BAA20D1087B3461B493D016CBA03 /* Pods-ConanAFN_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ConanAFN_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4B590D13CA64E6809DC2E5668CBB1B7C /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		4C0BDD4A4EFA0E15EA13B505EDDA0416 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		4E383323BCD87D0E2CD62C3D5CFD06DD /* ConanNetStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ConanNetStatus.m; sourceTree = "<group>"; };
+		5221B041258E565F3020820929E35425 /* FSMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSMDefines.h; path = RealReachability/FSM/FSMDefines.h; sourceTree = "<group>"; };
+		54F114DDF88A10164F2A55826F03ACF9 /* PingFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PingFoundation.m; path = RealReachability/Ping/PingFoundation.m; sourceTree = "<group>"; };
+		55545D229E0294AB3F1EAC8735165569 /* ReachStateUnloaded.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReachStateUnloaded.m; path = RealReachability/FSM/ReachStateUnloaded.m; sourceTree = "<group>"; };
+		557E30CDFB046CFF0E3536C7687D1123 /* Pods-ConanAFN_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ConanAFN_Example-frameworks.sh"; sourceTree = "<group>"; };
+		581EEEC6AA21FA6D33321DE10E7A40DD /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		5A6C130C52C0718C9C222D67DBAC9D6A /* ReachStateUnloaded.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReachStateUnloaded.h; path = RealReachability/FSM/ReachStateUnloaded.h; sourceTree = "<group>"; };
+		5BF327FB0BF23550EC0F52C9FEF4964C /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		5E07EE69D746A047BC5A3507341D2612 /* Pods-ConanAFN_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ConanAFN_Example.modulemap"; sourceTree = "<group>"; };
+		5EC6DB5236D0E118420EB0F366A74D4E /* Pods_ConanAFN_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ConanAFN_Example.framework; path = "Pods-ConanAFN_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC545EAD5615C2A1FB29436B892D41F /* ConanAfnBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ConanAfnBase.h; sourceTree = "<group>"; };
+		61A3616B9D79202739A20EEB8A3001CB /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		62E245D4ED257C23CEA38B338AFE248B /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64401D818CC064BF29248468F89D046C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		64DA8F88DF7857935F403800B27E85FA /* Pods-ConanAFN_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ConanAFN_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6512D8FF84478FD0DF98E7985737E567 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		6CC6CFDC265E4FE66861999BF553555F /* ReachStateWWAN.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReachStateWWAN.h; path = RealReachability/FSM/ReachStateWWAN.h; sourceTree = "<group>"; };
+		762EED10537DF21864E6CBFF57988CEC /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		782D4A678AD1BAFC19997560E317296F /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		79D75BF80747B63F07A59E8016F3A4C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B6AD119FE4442DBEDEE8B813CAEDB86 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		7CEAB3630A5987D2213386499929B310 /* RealReachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RealReachability-prefix.pch"; sourceTree = "<group>"; };
+		83CB2CAEC6F259B91A7E023B04796CFD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		8459F8162A0A8543E7B60EC32B68867D /* RealReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RealReachability.m; path = RealReachability/RealReachability.m; sourceTree = "<group>"; };
+		85EEAD6156D29E0662E9CD5FF5BDDCC7 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		86E94CCFCDAEC6A6C8B1291A931814F1 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		8CB89DBDFEFB5B8E2702E517E2008CBF /* Pods-ConanAFN_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ConanAFN_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		8DBE8E481E3A9076CA37BE9B1D2142F8 /* ConanAFN-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ConanAFN-dummy.m"; sourceTree = "<group>"; };
+		8E27437209F08AEE67332030551965B0 /* ConanAfnAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ConanAfnAPI.h; sourceTree = "<group>"; };
+		92EC301DD2B998E6D59B51443E301F10 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95BA7964397A9D509E6A00285EE38FB3 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		95E188BE6D92CA7A88BAFC99932457BB /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		96B4A3EFFF83CE40B20617A21E9178EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		982AD6E089BC73595812D84A487A726A /* ConanShowAutoDismissAlertMessageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ConanShowAutoDismissAlertMessageView.h; sourceTree = "<group>"; };
+		98AB2E8F59FE05D714FA69353A14CA87 /* LocalConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LocalConnection.h; path = RealReachability/Connection/LocalConnection.h; sourceTree = "<group>"; };
+		9B61A95D7437C4D1503B7FFBC3B948FC /* ConanAfnDataRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ConanAfnDataRequest.h; sourceTree = "<group>"; };
+		A07DBDE507C96A26C2292A878E98CC25 /* FSMEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSMEngine.m; path = RealReachability/FSM/FSMEngine.m; sourceTree = "<group>"; };
+		A1E4CDDA12E433BE5585DF724563A574 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EB689F3DA2D59D4CAFB5D9D1821418 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		A44BDF9423B84C82B566E57EE9AF2D3B /* Pods-ConanAFN_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConanAFN_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A486755A66D74C2915FF416792F1F587 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8302B06152EA2A9AD97D47E987EED1F /* ConanMacroDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ConanMacroDefine.h; sourceTree = "<group>"; };
+		AAD64CC3D6E445C9685BB466EFDF1026 /* FSMEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSMEngine.h; path = RealReachability/FSM/FSMEngine.h; sourceTree = "<group>"; };
+		ABDD87C9153A52F0DD90DAE6B8B0FF88 /* ConanAfnManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ConanAfnManager.m; sourceTree = "<group>"; };
+		ADC6720AFAE087E202140B4C801299C5 /* ReachStateLoading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReachStateLoading.m; path = RealReachability/FSM/ReachStateLoading.m; sourceTree = "<group>"; };
+		AE50AF8E9DD522E349FE93E315032438 /* ConanAFN-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ConanAFN-prefix.pch"; sourceTree = "<group>"; };
+		AED8966D56B242BF43F04E0F4A0BFAA4 /* ConanNetStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ConanNetStatus.h; sourceTree = "<group>"; };
+		B32B01CEE3805B6FE1EB393EFF53B2F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B3FDA51F06B21A133F5F20BF2F0E6717 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		B551332381816C1522962B939BB4299E /* ConanShowAutoDismissAlertMessageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ConanShowAutoDismissAlertMessageView.m; sourceTree = "<group>"; };
+		B6B127A087F84DD2F936185CD04538DC /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		B6C3AB05782FB28C647FFBC0E1B12860 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		B82E039167036C19538EA57E433AF203 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		B94F67FD94A07383DEC7B1EF3400B9C6 /* RealReachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RealReachability.framework; path = RealReachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4E4CBF846AFD9998DE7977EB6CB0D4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		BE7AFD9C1B4B3E23CCFD6F9DB1F7E711 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		BF688CFC2310BB765FC0C1A09A5735A0 /* RealReachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RealReachability.xcconfig; sourceTree = "<group>"; };
+		C3152059C99D5475580BB52F187DEA07 /* ReachState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReachState.m; path = RealReachability/FSM/ReachState.m; sourceTree = "<group>"; };
+		C33070D462B7DD11E264B805D9CC9A12 /* ConanAfnBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ConanAfnBlock.h; sourceTree = "<group>"; };
+		C360E24C6B1EBF99D2E9C39FDCB2339F /* ConanAfnBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ConanAfnBase.m; sourceTree = "<group>"; };
+		C3ADB7020BE0C90704EE76EEBAF35985 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		C6A9AD29D1B0CF3E0D83C1EA53EC00FE /* ReachStateUnReachable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReachStateUnReachable.h; path = RealReachability/FSM/ReachStateUnReachable.h; sourceTree = "<group>"; };
+		C98B385BDA42DD4483AE2B8B642BDBD5 /* Pods-ConanAFN_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConanAFN_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CA508F2A210498AB065DCCBC7EFAF75C /* PingHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PingHelper.m; path = RealReachability/Ping/PingHelper.m; sourceTree = "<group>"; };
+		CC1E4AF059F9CC8B3C3D9E64B0DA6DE4 /* ConanAfnManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ConanAfnManager.h; sourceTree = "<group>"; };
+		CF7D43430BB3AACF6E60A5F839C3B362 /* Pods-ConanAFN_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConanAFN_Example-umbrella.h"; sourceTree = "<group>"; };
+		D0C73A64D5D671390B82DF0EA1A79A22 /* FSMStateUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSMStateUtil.m; path = RealReachability/FSM/FSMStateUtil.m; sourceTree = "<group>"; };
+		D0E253C4AB06A56D44F37C7E67C72DD5 /* Pods-ConanAFN_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ConanAFN_Example-resources.sh"; sourceTree = "<group>"; };
+		D274E14AB2A17E67A3311FCE270DC895 /* RealReachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RealReachability-dummy.m"; sourceTree = "<group>"; };
+		D30C492F5A3A6E3799FA6AE462DFFC3F /* Pods_ConanAFN_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ConanAFN_Tests.framework; path = "Pods-ConanAFN_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95EC2E75510D78D166A64D3FC706731 /* PingFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PingFoundation.h; path = RealReachability/Ping/PingFoundation.h; sourceTree = "<group>"; };
+		DA8C2A37BCAB9D32CF108D5340EA7D20 /* Pods-ConanAFN_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConanAFN_Example.release.xcconfig"; sourceTree = "<group>"; };
+		DA9B68907EC24903D883F6A14888D84C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		DAF5D000DE3CD0584B629987BDF89BC1 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		DCD8FDD080316E5E3F6879EAA1206756 /* Pods-ConanAFN_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ConanAFN_Tests.modulemap"; sourceTree = "<group>"; };
+		DD90AA709DCC91709D1F8EE539382273 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		DF60954E0D0BBA8C141BF1FD0FB539E0 /* ReachStateWWAN.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReachStateWWAN.m; path = RealReachability/FSM/ReachStateWWAN.m; sourceTree = "<group>"; };
+		E38F0A177B55B55EF2B1433DB42BD552 /* ConanMD5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ConanMD5.h; sourceTree = "<group>"; };
+		E448FF4CE8FA58DCC616DDB1D4AF092B /* Pods-ConanAFN_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ConanAFN_Example-dummy.m"; sourceTree = "<group>"; };
+		E4E2FD1B173C4702F1E210407AB354B9 /* Pods-ConanAFN_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ConanAFN_Tests-dummy.m"; sourceTree = "<group>"; };
+		E5C90AE6CBE68C242A33476D67F5FA1A /* RealReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RealReachability.h; path = RealReachability/RealReachability.h; sourceTree = "<group>"; };
+		E7402918F801A49B6C5AFCB0E6C4E4A6 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		E845F80FBC9365EE3A23040618FDD151 /* ConanSaveFilePath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ConanSaveFilePath.h; sourceTree = "<group>"; };
+		EA5631355B4CDFEEF4992A1938F72A94 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		EEDA1985C42E5A62D076E93598291349 /* ReachState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReachState.h; path = RealReachability/FSM/ReachState.h; sourceTree = "<group>"; };
+		F00257B7E219CBA720225F0BFA00CF8F /* ReachStateWIFI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReachStateWIFI.m; path = RealReachability/FSM/ReachStateWIFI.m; sourceTree = "<group>"; };
+		F7E1CE0C0B637057C0426FED3D41C00F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA8678710F0AD037EDF9FE8FEC78FF53 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		FB1FE4EC877001D8C4F8AA8A7E6B5E55 /* Pods-ConanAFN_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ConanAFN_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FB6CA676F5849F48093DD894985C8E94 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		FECD78E85BED4647D75EB7E1D35154F7 /* ConanSaveFilePath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ConanSaveFilePath.m; sourceTree = "<group>"; };
+		FF61E6598E6A5E3390FAE7AA8CEE4D12 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23AE7F4BB4E95CA2D0B57068998E7633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314134EA6EF3BCEC5809B577398FD55D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F44911563C03EE01D7E49B4C1F0D0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA2D29D9265012FAC7A88D9A8CCD9989 /* CoreGraphics.framework in Frameworks */,
+				BC22E83FBE012D2A1B6B72B886832AF4 /* Foundation.framework in Frameworks */,
+				72BE65E696A388D4CC0D75BE461FEF1B /* MobileCoreServices.framework in Frameworks */,
+				23EFB184AD12FB1014FFC765CE0D710A /* Security.framework in Frameworks */,
+				CE2EB8CE3176F8A1FAA78CC8786292CC /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80544DA975A63B53F92D8D408580E0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE31C15BEF9439B85FDA811A3EA1E02D /* CoreGraphics.framework in Frameworks */,
+				DA4161305702FF402EBE6367B2CD8E63 /* Foundation.framework in Frameworks */,
+				9F8A810CCB5D0955892A2BD4720EA34A /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD38C7CFBB6B19E84156784F2BBAD63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BE4576B5F1A30A59E1980946D617E30 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B95A6B7EB93175AECA5F6B0E56475BAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85DA7D8DB856AACC3B6A149CD6733CEC /* AFNetworking.framework in Frameworks */,
+				247D8B5B60A0EDA3599D5552F105E1C2 /* Foundation.framework in Frameworks */,
+				F71647318CC207857F268F9224C87D0F /* MBProgressHUD.framework in Frameworks */,
+				AF41CBF0399834B877DCA3A5C1238583 /* RealReachability.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFBDB7166B5D6E864A64FEA9424C1A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EB9E7877710BBFE48FF53CB777D1DAF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04DCF1C0775B3EDCB67FAE9A919E5CD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62E245D4ED257C23CEA38B338AFE248B /* AFNetworking.framework */,
+				A1E4CDDA12E433BE5585DF724563A574 /* MBProgressHUD.framework */,
+				0785FD47F0C6F3A5FA9EC17ECCD1D1B4 /* RealReachability.framework */,
+				52C1DB0A657AAF5DFD4D0C1C07544CE0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06DC16A2CD2177F6082F6FD6BBBA5B0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44E8C5B611E6F2F4B3D15A41C8E7E8C4 /* AFNetworking.framework */,
+				034EF957A540E2485B8D8D9B0474F0DA /* ConanAFN.framework */,
+				016E10082FC7C71F583644C8E8091152 /* MBProgressHUD.framework */,
+				5EC6DB5236D0E118420EB0F366A74D4E /* Pods_ConanAFN_Example.framework */,
+				D30C492F5A3A6E3799FA6AE462DFFC3F /* Pods_ConanAFN_Tests.framework */,
+				B94F67FD94A07383DEC7B1EF3400B9C6 /* RealReachability.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11EEBD698F1E98B0B6EC46056914885A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CE2CA348147464E742650779DA09DEC /* AFNetworking.modulemap */,
+				E7402918F801A49B6C5AFCB0E6C4E4A6 /* AFNetworking.xcconfig */,
+				25B31EF3C71B68F516F2E5C41FB4C009 /* AFNetworking-dummy.m */,
+				25A404D3D2A97086E0EF064217205CBB /* AFNetworking-prefix.pch */,
+				4B590D13CA64E6809DC2E5668CBB1B7C /* AFNetworking-umbrella.h */,
+				A486755A66D74C2915FF416792F1F587 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		13E1005106F9B69CFCBB17DCD6A02D41 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				FF61E6598E6A5E3390FAE7AA8CEE4D12 /* AFSecurityPolicy.h */,
+				B6C3AB05782FB28C647FFBC0E1B12860 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		202FD6442A3D9C15F4BDEFD6EA6EBEDA /* RealReachability */ = {
+			isa = PBXGroup;
+			children = (
+				5221B041258E565F3020820929E35425 /* FSMDefines.h */,
+				AAD64CC3D6E445C9685BB466EFDF1026 /* FSMEngine.h */,
+				A07DBDE507C96A26C2292A878E98CC25 /* FSMEngine.m */,
+				31D354B07E6B7257960B49537C1D3A0A /* FSMStateUtil.h */,
+				D0C73A64D5D671390B82DF0EA1A79A22 /* FSMStateUtil.m */,
+				EEDA1985C42E5A62D076E93598291349 /* ReachState.h */,
+				C3152059C99D5475580BB52F187DEA07 /* ReachState.m */,
+				2BEB92C00FCFFA89677B9C30CF962328 /* ReachStateLoading.h */,
+				ADC6720AFAE087E202140B4C801299C5 /* ReachStateLoading.m */,
+				5A6C130C52C0718C9C222D67DBAC9D6A /* ReachStateUnloaded.h */,
+				55545D229E0294AB3F1EAC8735165569 /* ReachStateUnloaded.m */,
+				C6A9AD29D1B0CF3E0D83C1EA53EC00FE /* ReachStateUnReachable.h */,
+				16E6A7CD8EF0A01A4A6BE791205902B3 /* ReachStateUnReachable.m */,
+				0742836FFAE17084BAD9C7A9835AC2D0 /* ReachStateWIFI.h */,
+				F00257B7E219CBA720225F0BFA00CF8F /* ReachStateWIFI.m */,
+				6CC6CFDC265E4FE66861999BF553555F /* ReachStateWWAN.h */,
+				DF60954E0D0BBA8C141BF1FD0FB539E0 /* ReachStateWWAN.m */,
+				E5C90AE6CBE68C242A33476D67F5FA1A /* RealReachability.h */,
+				8459F8162A0A8543E7B60EC32B68867D /* RealReachability.m */,
+				31B528AAB5DECA754E579B9CE23F5507 /* Connection */,
+				F1C172BB81A116D25AB5EAF1362E0D85 /* Ping */,
+				6D50F5E3D068E86E4B9E90FDE6FF7A8B /* Support Files */,
+			);
+			name = RealReachability;
+			path = RealReachability;
+			sourceTree = "<group>";
+		};
+		251BAA5349960D16A846BD81FE5A9D5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F21CED021025E6C030386CC232457990 /* AFNetworking */,
+				DFC64DD029FD7873069B795E4E2E5401 /* MBProgressHUD */,
+				202FD6442A3D9C15F4BDEFD6EA6EBEDA /* RealReachability */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2D7A09E6CD36BDE3B063BB6AA658C079 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				96B4A3EFFF83CE40B20617A21E9178EE /* Info.plist */,
+				2B60ECBA3CFC2834FC592CA83EFB74A6 /* MBProgressHUD.modulemap */,
+				3D312A93399FC2C0B17AEB70EC209FA4 /* MBProgressHUD.xcconfig */,
+				C3ADB7020BE0C90704EE76EEBAF35985 /* MBProgressHUD-dummy.m */,
+				4C0BDD4A4EFA0E15EA13B505EDDA0416 /* MBProgressHUD-prefix.pch */,
+				FA8678710F0AD037EDF9FE8FEC78FF53 /* MBProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		31B528AAB5DECA754E579B9CE23F5507 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				98AB2E8F59FE05D714FA69353A14CA87 /* LocalConnection.h */,
+				1E1380276FD7351550A9024C53F3D6A9 /* LocalConnection.m */,
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
+		4C52E51BC197022D6D0D95E778E6EDDC /* ConanAFN */ = {
+			isa = PBXGroup;
+			children = (
+				8E27437209F08AEE67332030551965B0 /* ConanAfnAPI.h */,
+				39E95E98124F602D26573D2E5F0CD9C8 /* ConanAfnAPI.m */,
+				5FC545EAD5615C2A1FB29436B892D41F /* ConanAfnBase.h */,
+				C360E24C6B1EBF99D2E9C39FDCB2339F /* ConanAfnBase.m */,
+				C33070D462B7DD11E264B805D9CC9A12 /* ConanAfnBlock.h */,
+				9B61A95D7437C4D1503B7FFBC3B948FC /* ConanAfnDataRequest.h */,
+				195E23A265C5BE2E0B338332D03A39E8 /* ConanAfnDataRequest.m */,
+				46490A156ABEE4FC62995C67C830DBFD /* ConanAfnEnumType.h */,
+				CC1E4AF059F9CC8B3C3D9E64B0DA6DE4 /* ConanAfnManager.h */,
+				ABDD87C9153A52F0DD90DAE6B8B0FF88 /* ConanAfnManager.m */,
+				1D0228502A68980F97F5E58CBCB232BB /* ConanAfnResourceRequest.h */,
+				02A74FA9FEE140A3604043DD6CBC0985 /* ConanAfnResourceRequest.m */,
+				A8302B06152EA2A9AD97D47E987EED1F /* ConanMacroDefine.h */,
+				E38F0A177B55B55EF2B1433DB42BD552 /* ConanMD5.h */,
+				143928A54F0DC48C225E4312F6A6F186 /* ConanMD5.m */,
+				AED8966D56B242BF43F04E0F4A0BFAA4 /* ConanNetStatus.h */,
+				4E383323BCD87D0E2CD62C3D5CFD06DD /* ConanNetStatus.m */,
+				E845F80FBC9365EE3A23040618FDD151 /* ConanSaveFilePath.h */,
+				FECD78E85BED4647D75EB7E1D35154F7 /* ConanSaveFilePath.m */,
+				982AD6E089BC73595812D84A487A726A /* ConanShowAutoDismissAlertMessageView.h */,
+				B551332381816C1522962B939BB4299E /* ConanShowAutoDismissAlertMessageView.m */,
+			);
+			name = ConanAFN;
+			path = ConanAFN;
+			sourceTree = "<group>";
+		};
+		52C1DB0A657AAF5DFD4D0C1C07544CE0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B68907EC24903D883F6A14888D84C /* CoreGraphics.framework */,
+				B32B01CEE3805B6FE1EB393EFF53B2F7 /* Foundation.framework */,
+				83CB2CAEC6F259B91A7E023B04796CFD /* MobileCoreServices.framework */,
+				64401D818CC064BF29248468F89D046C /* QuartzCore.framework */,
+				BB4E4CBF846AFD9998DE7977EB6CB0D4 /* Security.framework */,
+				3760FA14F9AC74883495EAF8B825DABC /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5BF63A33565B9DE9376F70E7DA0E2BAC /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				20F8CC93F1E24A02510FBC25B508B89F /* AFNetworkReachabilityManager.h */,
+				EA5631355B4CDFEEF4992A1938F72A94 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		65F3A82A0BAFB1C118CCD47B37934A93 /* Pods-ConanAFN_Example */ = {
+			isa = PBXGroup;
+			children = (
+				18B638B97B81D444FD2A97B39C60B9C5 /* Info.plist */,
+				5E07EE69D746A047BC5A3507341D2612 /* Pods-ConanAFN_Example.modulemap */,
+				64DA8F88DF7857935F403800B27E85FA /* Pods-ConanAFN_Example-acknowledgements.markdown */,
+				FB1FE4EC877001D8C4F8AA8A7E6B5E55 /* Pods-ConanAFN_Example-acknowledgements.plist */,
+				E448FF4CE8FA58DCC616DDB1D4AF092B /* Pods-ConanAFN_Example-dummy.m */,
+				557E30CDFB046CFF0E3536C7687D1123 /* Pods-ConanAFN_Example-frameworks.sh */,
+				D0E253C4AB06A56D44F37C7E67C72DD5 /* Pods-ConanAFN_Example-resources.sh */,
+				CF7D43430BB3AACF6E60A5F839C3B362 /* Pods-ConanAFN_Example-umbrella.h */,
+				2F7CF20E56A175FE12AE1E245C5A5FFB /* Pods-ConanAFN_Example.debug.xcconfig */,
+				DA8C2A37BCAB9D32CF108D5340EA7D20 /* Pods-ConanAFN_Example.release.xcconfig */,
+			);
+			name = "Pods-ConanAFN_Example";
+			path = "Target Support Files/Pods-ConanAFN_Example";
+			sourceTree = "<group>";
+		};
+		6D50F5E3D068E86E4B9E90FDE6FF7A8B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4038109A1D8EE037F4E5CBD2009EC9F1 /* Info.plist */,
+				13E189CB2E1C4F3FB63E82AB815135C0 /* RealReachability.modulemap */,
+				BF688CFC2310BB765FC0C1A09A5735A0 /* RealReachability.xcconfig */,
+				D274E14AB2A17E67A3311FCE270DC895 /* RealReachability-dummy.m */,
+				7CEAB3630A5987D2213386499929B310 /* RealReachability-prefix.pch */,
+				0CBCEE5587131101D3CFD26C67DEDAF6 /* RealReachability-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RealReachability";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D37A80F9D187AA664B70073585F1D2DA /* Development Pods */,
+				04DCF1C0775B3EDCB67FAE9A919E5CD4 /* Frameworks */,
+				251BAA5349960D16A846BD81FE5A9D5A /* Pods */,
+				06DC16A2CD2177F6082F6FD6BBBA5B0E /* Products */,
+				EB488F8E6843A08FC733C9472B5A146B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7FFE85D440F48B977777452DA35FD0C2 /* ConanAFN */ = {
+			isa = PBXGroup;
+			children = (
+				4C52E51BC197022D6D0D95E778E6EDDC /* ConanAFN */,
+				CE9EC71FD53C5C7C4B05CD737F83CE53 /* Support Files */,
+			);
+			name = ConanAFN;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		881DB827EBBFB396EDA9613016EB0151 /* Pods-ConanAFN_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				79D75BF80747B63F07A59E8016F3A4C8 /* Info.plist */,
+				DCD8FDD080316E5E3F6879EAA1206756 /* Pods-ConanAFN_Tests.modulemap */,
+				4876BAA20D1087B3461B493D016CBA03 /* Pods-ConanAFN_Tests-acknowledgements.markdown */,
+				2DC28B64014275073936C38B60D2D5B4 /* Pods-ConanAFN_Tests-acknowledgements.plist */,
+				E4E2FD1B173C4702F1E210407AB354B9 /* Pods-ConanAFN_Tests-dummy.m */,
+				8CB89DBDFEFB5B8E2702E517E2008CBF /* Pods-ConanAFN_Tests-frameworks.sh */,
+				30C90363A63E564F608CE4E277650BFF /* Pods-ConanAFN_Tests-resources.sh */,
+				A44BDF9423B84C82B566E57EE9AF2D3B /* Pods-ConanAFN_Tests-umbrella.h */,
+				076C6187E7FB42E2D457F550BBB76308 /* Pods-ConanAFN_Tests.debug.xcconfig */,
+				C98B385BDA42DD4483AE2B8B642BDBD5 /* Pods-ConanAFN_Tests.release.xcconfig */,
+			);
+			name = "Pods-ConanAFN_Tests";
+			path = "Target Support Files/Pods-ConanAFN_Tests";
+			sourceTree = "<group>";
+		};
+		90740C81EC1C0955E07BB9B634CB70FA /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				056EDF0BE9F3FC73A05D17964C2C389B /* AFHTTPSessionManager.h */,
+				92EC301DD2B998E6D59B51443E301F10 /* AFHTTPSessionManager.m */,
+				264E75A64C701EDE9F80BC7D075E389E /* AFURLSessionManager.h */,
+				3C8FA0937C10465FE77F80567034A7B7 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		9EE5095759131EBF5CF90A9AA3D3573A /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				00C530345EA1F264434991AAF0FF1AEC /* AFURLRequestSerialization.h */,
+				B82E039167036C19538EA57E433AF203 /* AFURLRequestSerialization.m */,
+				95BA7964397A9D509E6A00285EE38FB3 /* AFURLResponseSerialization.h */,
+				B6B127A087F84DD2F936185CD04538DC /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		B5721D1D8A67BE2B328AC785C2717069 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				46CA386478B8E10CCD2639C4E530434C /* AFAutoPurgingImageCache.h */,
+				782D4A678AD1BAFC19997560E317296F /* AFAutoPurgingImageCache.m */,
+				DAF5D000DE3CD0584B629987BDF89BC1 /* AFImageDownloader.h */,
+				95E188BE6D92CA7A88BAFC99932457BB /* AFImageDownloader.m */,
+				6512D8FF84478FD0DF98E7985737E567 /* AFNetworkActivityIndicatorManager.h */,
+				7B6AD119FE4442DBEDEE8B813CAEDB86 /* AFNetworkActivityIndicatorManager.m */,
+				61A3616B9D79202739A20EEB8A3001CB /* UIActivityIndicatorView+AFNetworking.h */,
+				86E94CCFCDAEC6A6C8B1291A931814F1 /* UIActivityIndicatorView+AFNetworking.m */,
+				35BE01DD813C7884953FE5C9AE48EE27 /* UIButton+AFNetworking.h */,
+				30CBADE381FEDD4AE1370D45DBBEB450 /* UIButton+AFNetworking.m */,
+				762EED10537DF21864E6CBFF57988CEC /* UIImage+AFNetworking.h */,
+				B3FDA51F06B21A133F5F20BF2F0E6717 /* UIImageView+AFNetworking.h */,
+				07AF11F36ECD44A7D7F5C6F973165356 /* UIImageView+AFNetworking.m */,
+				BE7AFD9C1B4B3E23CCFD6F9DB1F7E711 /* UIKit+AFNetworking.h */,
+				0B36E345CCB0DAC26EDE45BD9F0D5F0D /* UIProgressView+AFNetworking.h */,
+				581EEEC6AA21FA6D33321DE10E7A40DD /* UIProgressView+AFNetworking.m */,
+				85EEAD6156D29E0662E9CD5FF5BDDCC7 /* UIRefreshControl+AFNetworking.h */,
+				A2EB689F3DA2D59D4CAFB5D9D1821418 /* UIRefreshControl+AFNetworking.m */,
+				3AD510298420F0BA2C6081C8B9375C2E /* UIWebView+AFNetworking.h */,
+				FB6CA676F5849F48093DD894985C8E94 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		CE9EC71FD53C5C7C4B05CD737F83CE53 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				160EB2AA055F791A39B3675DB16D923B /* ConanAFN.modulemap */,
+				38E4FDBDDCAC60886F5E6090CFC65C89 /* ConanAFN.xcconfig */,
+				8DBE8E481E3A9076CA37BE9B1D2142F8 /* ConanAFN-dummy.m */,
+				AE50AF8E9DD522E349FE93E315032438 /* ConanAFN-prefix.pch */,
+				471A5DAB64F8CC1CE11B7B654E7E9E84 /* ConanAFN-umbrella.h */,
+				F7E1CE0C0B637057C0426FED3D41C00F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ConanAFN";
+			sourceTree = "<group>";
+		};
+		D37A80F9D187AA664B70073585F1D2DA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FFE85D440F48B977777452DA35FD0C2 /* ConanAFN */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DFC64DD029FD7873069B795E4E2E5401 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4107A0F7B7DB9D8F94DD137C16251990 /* MBProgressHUD.h */,
+				5BF327FB0BF23550EC0F52C9FEF4964C /* MBProgressHUD.m */,
+				2D7A09E6CD36BDE3B063BB6AA658C079 /* Support Files */,
+			);
+			name = MBProgressHUD;
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		EB488F8E6843A08FC733C9472B5A146B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				65F3A82A0BAFB1C118CCD47B37934A93 /* Pods-ConanAFN_Example */,
+				881DB827EBBFB396EDA9613016EB0151 /* Pods-ConanAFN_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F1C172BB81A116D25AB5EAF1362E0D85 /* Ping */ = {
+			isa = PBXGroup;
+			children = (
+				D95EC2E75510D78D166A64D3FC706731 /* PingFoundation.h */,
+				54F114DDF88A10164F2A55826F03ACF9 /* PingFoundation.m */,
+				3D4E768302764D8D9A445577C2B18A55 /* PingHelper.h */,
+				CA508F2A210498AB065DCCBC7EFAF75C /* PingHelper.m */,
+			);
+			name = Ping;
+			sourceTree = "<group>";
+		};
+		F21CED021025E6C030386CC232457990 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DD90AA709DCC91709D1F8EE539382273 /* AFNetworking.h */,
+				90740C81EC1C0955E07BB9B634CB70FA /* NSURLSession */,
+				5BF63A33565B9DE9376F70E7DA0E2BAC /* Reachability */,
+				13E1005106F9B69CFCBB17DCD6A02D41 /* Security */,
+				9EE5095759131EBF5CF90A9AA3D3573A /* Serialization */,
+				11EEBD698F1E98B0B6EC46056914885A /* Support Files */,
+				B5721D1D8A67BE2B328AC785C2717069 /* UIKit */,
+			);
+			name = AFNetworking;
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		04D7FB74EE284043D0401D24AAE7A609 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3F1574B3BDD1F7D7F0550FE3FA2E62 /* Pods-ConanAFN_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629AD7A963D9BB05EC26B2C36F87F37E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				887B6F49452AC6EC0CBF21BF327604D5 /* ConanAFN-umbrella.h in Headers */,
+				A4B40104CE1A91EE92F533B33711ED65 /* ConanAfnAPI.h in Headers */,
+				2EB4329745D2F7CF9894C669AA44BE59 /* ConanAfnBase.h in Headers */,
+				E27F57E19214315B8C8127FC88466D98 /* ConanAfnBlock.h in Headers */,
+				9619C5256BC168F0DDA168B47F75EB30 /* ConanAfnDataRequest.h in Headers */,
+				FC77EDF4DAB7F8B60B74F10AE2FE720F /* ConanAfnEnumType.h in Headers */,
+				480C573649015CD3B8ED2BF773963387 /* ConanAfnManager.h in Headers */,
+				9B1089FE6EA9CD9CF23DFF5578F651DA /* ConanAfnResourceRequest.h in Headers */,
+				2FE4232A923C686333460C62FA69B9F9 /* ConanMacroDefine.h in Headers */,
+				18490123E38B00B40F976F58D3559C17 /* ConanMD5.h in Headers */,
+				896F1951915F23ADDFF2B2EBC10BAABD /* ConanNetStatus.h in Headers */,
+				9CC705B1A0BE7831DDEC950322451632 /* ConanSaveFilePath.h in Headers */,
+				A6F99E60FA3ACA56551005CD82C9048D /* ConanShowAutoDismissAlertMessageView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B1F9705A6B0A4355D0E6BBD01A11E23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9BA009D5F04594B3A710C78C2D3672 /* FSMDefines.h in Headers */,
+				48D0B19238CF8CDCFE0E9C3D583CCC9F /* FSMEngine.h in Headers */,
+				0F35BC41F26B434B360DF61F4780E8D8 /* FSMStateUtil.h in Headers */,
+				694F7AFC55575582264F7DE45CB605DD /* LocalConnection.h in Headers */,
+				8D3331846EFA64BD330C2703F84BB438 /* PingFoundation.h in Headers */,
+				A8E4A1C56766CE3303CBE38A7512624A /* PingHelper.h in Headers */,
+				08382F5133783C3225A6A766586B709B /* ReachState.h in Headers */,
+				A9095E52779C8CFC7C4620C67D66B041 /* ReachStateLoading.h in Headers */,
+				9213357645A9A0F4DB319C3253CC83C6 /* ReachStateUnloaded.h in Headers */,
+				DC3FDB10E5B44D47E1FA079431ED1572 /* ReachStateUnReachable.h in Headers */,
+				A08E560615FFC2255DA2F27F7951B8ED /* ReachStateWIFI.h in Headers */,
+				A0DDC9CF7E4D52B77E3F3D2FC1C6CD57 /* ReachStateWWAN.h in Headers */,
+				F181C5A4773E78FEB5B9301BE95C2ECD /* RealReachability-umbrella.h in Headers */,
+				996C1FD070FAE327E1540E88E406BD48 /* RealReachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99B2ED1C0AF3FA893481E4ADC5F6BB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA593E488E442E0AFAE19EC33B327E19 /* Pods-ConanAFN_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF51EB9C179540355326BC18C9FAF5E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47F04CBDF6C54B220F6AEECEF15264D5 /* AFAutoPurgingImageCache.h in Headers */,
+				4442D8453D210EFC13CFE2CAF862ED1D /* AFHTTPSessionManager.h in Headers */,
+				FEF6EACE962EAE70E2EAC5F3C83EF7C8 /* AFImageDownloader.h in Headers */,
+				7A112C0F21A62CB6F1AA8D917A6EEA6C /* AFNetworkActivityIndicatorManager.h in Headers */,
+				1E2A6D057E20BE8F5ED3E594F7B8C286 /* AFNetworking-umbrella.h in Headers */,
+				35CBB7B255FD8D412AFCECBC4311A847 /* AFNetworking.h in Headers */,
+				93DFC0CC12E763AE770017349EE009D1 /* AFNetworkReachabilityManager.h in Headers */,
+				6573AF9ABA59AC8D1F52B07088197F71 /* AFSecurityPolicy.h in Headers */,
+				F1CAA2EBDDFF558DEF98684F2479A7AF /* AFURLRequestSerialization.h in Headers */,
+				948458DC0A9308A2D8C018C37FB7BBDD /* AFURLResponseSerialization.h in Headers */,
+				AE976B0E8E3DD81E4F49DBEF19D3C0AD /* AFURLSessionManager.h in Headers */,
+				45F802D04B3BE0CAEC586C2F3016027B /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				2B0705CC26A4CBEE32A5A60284AED35B /* UIButton+AFNetworking.h in Headers */,
+				9264BD69AFA8EE74F0D7F0EBD74F762F /* UIImage+AFNetworking.h in Headers */,
+				0D1FFD30267C0776FD3E88EFF51E312F /* UIImageView+AFNetworking.h in Headers */,
+				E23B9A6F533461CB33C0FA6FB59E3AB2 /* UIKit+AFNetworking.h in Headers */,
+				F84DD74BB7F612DE372F8C051420DF72 /* UIProgressView+AFNetworking.h in Headers */,
+				00C05031BBA5BA48A00FE41348F41BDA /* UIRefreshControl+AFNetworking.h in Headers */,
+				51047C1945103943F70BEADE83725630 /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D034DBDBBB571BE05D143089C2377E96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831773F3C593C86018ECAFF33AD3CCA1 /* MBProgressHUD-umbrella.h in Headers */,
+				C2C92A002BC091E76FDD2DCBFC98E947 /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2B581F3AC09A6314CE1950392C0B9734 /* Pods-ConanAFN_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68BBEFE7BC1F29CD7E2AEC24B50D8792 /* Build configuration list for PBXNativeTarget "Pods-ConanAFN_Tests" */;
+			buildPhases = (
+				F6D83AA4EB6A9A9179BC9462F1735C80 /* Sources */,
+				AFD38C7CFBB6B19E84156784F2BBAD63 /* Frameworks */,
+				04D7FB74EE284043D0401D24AAE7A609 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ConanAFN_Tests";
+			productName = "Pods-ConanAFN_Tests";
+			productReference = D30C492F5A3A6E3799FA6AE462DFFC3F /* Pods_ConanAFN_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E8AFCF29E7901BC5B06E6EFFB130640 /* Pods-ConanAFN_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B9E8EC0D314C770F8B3A5B9A0C5D25 /* Build configuration list for PBXNativeTarget "Pods-ConanAFN_Example" */;
+			buildPhases = (
+				81EB70F4F496EBD8546551D8AE71467C /* Sources */,
+				DDFBDB7166B5D6E864A64FEA9424C1A8 /* Frameworks */,
+				A99B2ED1C0AF3FA893481E4ADC5F6BB6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EE2474EEC6CDD0D477289138EA0E49C /* PBXTargetDependency */,
+				A115F273B479E201ADE634074DBB0500 /* PBXTargetDependency */,
+				32B0A27FEDA415C07A99DA207E1CF467 /* PBXTargetDependency */,
+				E9E64E04A30B48585544B93D159727D3 /* PBXTargetDependency */,
+			);
+			name = "Pods-ConanAFN_Example";
+			productName = "Pods-ConanAFN_Example";
+			productReference = 5EC6DB5236D0E118420EB0F366A74D4E /* Pods_ConanAFN_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93C5383905ED2381742B9CBCF935FE5C /* ConanAFN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F5D63CF5E5A8D7E88EA2DCB41915020 /* Build configuration list for PBXNativeTarget "ConanAFN" */;
+			buildPhases = (
+				8CC5019AFDD39D91F3942B2F0A7600ED /* Sources */,
+				B95A6B7EB93175AECA5F6B0E56475BAF /* Frameworks */,
+				629AD7A963D9BB05EC26B2C36F87F37E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFDDDCB930EC825E78AF45EC31DBB631 /* PBXTargetDependency */,
+				7028E7F1E740F504662A78741B0DC79C /* PBXTargetDependency */,
+				FB9642D2BD16016430F7714EB6A7D569 /* PBXTargetDependency */,
+			);
+			name = ConanAFN;
+			productName = ConanAFN;
+			productReference = 034EF957A540E2485B8D8D9B0474F0DA /* ConanAFN.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1FFE08C521A89705123390DCCBBB8BD /* RealReachability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF46D9A62789074F2E32C4EF198BAFE /* Build configuration list for PBXNativeTarget "RealReachability" */;
+			buildPhases = (
+				306946C6A37CB165B832E86B3490AC60 /* Sources */,
+				23AE7F4BB4E95CA2D0B57068998E7633 /* Frameworks */,
+				7B1F9705A6B0A4355D0E6BBD01A11E23 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealReachability;
+			productName = RealReachability;
+			productReference = B94F67FD94A07383DEC7B1EF3400B9C6 /* RealReachability.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31E01BC98C827BD8A78F94173CDCC418 /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				6A10001116C48A3F5FDB7E1BC749EECD /* Sources */,
+				57F44911563C03EE01D7E49B4C1F0D0A /* Frameworks */,
+				BF51EB9C179540355326BC18C9FAF5E5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = 44E8C5B611E6F2F4B3D15A41C8E7E8C4 /* AFNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4FEBE9046E7FFDB9A7F163C6FE36BB4 /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A2D9D471F86F24A0D11FB02B671EA29 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				E7FD025FE32C93798A64E7E71D290108 /* Sources */,
+				80544DA975A63B53F92D8D408580E0FD /* Frameworks */,
+				D034DBDBBB571BE05D143089C2377E96 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = 016E10082FC7C71F583644C8E8091152 /* MBProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 06DC16A2CD2177F6082F6FD6BBBA5B0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */,
+				93C5383905ED2381742B9CBCF935FE5C /* ConanAFN */,
+				D4FEBE9046E7FFDB9A7F163C6FE36BB4 /* MBProgressHUD */,
+				6E8AFCF29E7901BC5B06E6EFFB130640 /* Pods-ConanAFN_Example */,
+				2B581F3AC09A6314CE1950392C0B9734 /* Pods-ConanAFN_Tests */,
+				A1FFE08C521A89705123390DCCBBB8BD /* RealReachability */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		306946C6A37CB165B832E86B3490AC60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F62854504A7ABB0E51A9F9904EB801C /* FSMEngine.m in Sources */,
+				C6F14C8469AB50C0B80F9FFAA6D2E9F3 /* FSMStateUtil.m in Sources */,
+				02D5E46F5258EC904687E7A05E70D95F /* LocalConnection.m in Sources */,
+				AEBCE11F6F6D91F6081E52A004B95350 /* PingFoundation.m in Sources */,
+				F2ED342EF4F39CDEB9D91D6578CBB558 /* PingHelper.m in Sources */,
+				071EBE4278E7F8994F6A8C3AA8BFFAFD /* ReachState.m in Sources */,
+				E2DECE099A458E9C59FA9F6F909431BD /* ReachStateLoading.m in Sources */,
+				DC0731AE7933FD6E5A893F0594143035 /* ReachStateUnloaded.m in Sources */,
+				9B0E69392CEAEAF87BFB8139729681DA /* ReachStateUnReachable.m in Sources */,
+				B5BCA82C032763FE03FB93D6FEB6DCF3 /* ReachStateWIFI.m in Sources */,
+				5198560BC99CD46D0E7D8587C4AEAAF8 /* ReachStateWWAN.m in Sources */,
+				FA5A757C390ABAB525A779DE16528044 /* RealReachability-dummy.m in Sources */,
+				1BE5D007BE7CDE5C57C89A6991E9647F /* RealReachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A10001116C48A3F5FDB7E1BC749EECD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3591DEDA776B48C026E7F9144981E58 /* AFAutoPurgingImageCache.m in Sources */,
+				EAF16633DB3C992CF975BE4A2932D41C /* AFHTTPSessionManager.m in Sources */,
+				A398D63C8DED664D99A864D79881A13C /* AFImageDownloader.m in Sources */,
+				649E78B5EA450FABDF5201E31F265FAB /* AFNetworkActivityIndicatorManager.m in Sources */,
+				CF287829627F26B2EB4382B897D06A0E /* AFNetworking-dummy.m in Sources */,
+				DD887A93A200A87A51B3D00BD1B80D20 /* AFNetworkReachabilityManager.m in Sources */,
+				CEB2F0E229EF841D92C780C3FFDF1BEA /* AFSecurityPolicy.m in Sources */,
+				29476636EA86BEFC4CB833D3BB7A52D7 /* AFURLRequestSerialization.m in Sources */,
+				5A1D34D104D42B1EE399E23BCD7935A0 /* AFURLResponseSerialization.m in Sources */,
+				D4E80BD7EAAB83200183110578A80591 /* AFURLSessionManager.m in Sources */,
+				140F458AB7312414FC423FEED70A3733 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				32076D3DD644045CF79DFFEBB6BFF3F2 /* UIButton+AFNetworking.m in Sources */,
+				F2D899C7AA0D7FC20160091BB9D31CF3 /* UIImageView+AFNetworking.m in Sources */,
+				34C88657FE7ABE9F833623F94952D253 /* UIProgressView+AFNetworking.m in Sources */,
+				B16A078FC7FBC172A266A336AEF7F673 /* UIRefreshControl+AFNetworking.m in Sources */,
+				7CE16B1BF75DF396768A0A3CFD968DB1 /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81EB70F4F496EBD8546551D8AE71467C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA0A624EE82A8A94D6B764696AD95EA /* Pods-ConanAFN_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC5019AFDD39D91F3942B2F0A7600ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C3F4D6D2C7D3A21F82FC6B6F5DC1F8 /* ConanAFN-dummy.m in Sources */,
+				AE85C1A4BA6FAF64B30AB171F9FD688B /* ConanAfnAPI.m in Sources */,
+				E4DD678FD3BDB5F290359972B830037A /* ConanAfnBase.m in Sources */,
+				FF67D24F7FEDF468B58B8250202E5E97 /* ConanAfnDataRequest.m in Sources */,
+				83E2DFC53F0D7C97FFD12DB6908A38FD /* ConanAfnManager.m in Sources */,
+				6E51B5AC8FE3332D766DC00B19F3C6C3 /* ConanAfnResourceRequest.m in Sources */,
+				E2A3E462F8E02EE7203DB3C65C8733A2 /* ConanMD5.m in Sources */,
+				3EEE4AEA8F1D7637EC86C3DAE88BD4C1 /* ConanNetStatus.m in Sources */,
+				4842C3047BD6A9A046916A2AEFDAA60B /* ConanSaveFilePath.m in Sources */,
+				4A9AC9E42BFD52E12ED779F2BE6C74D4 /* ConanShowAutoDismissAlertMessageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FD025FE32C93798A64E7E71D290108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A82FF887B4541E99F9A3B4A7A33A7B /* MBProgressHUD-dummy.m in Sources */,
+				68A0194137F97DE65DF7F99275BB6768 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D83AA4EB6A9A9179BC9462F1735C80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C1055F934C7075B309295018AB8A2D /* Pods-ConanAFN_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32B0A27FEDA415C07A99DA207E1CF467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = D4FEBE9046E7FFDB9A7F163C6FE36BB4 /* MBProgressHUD */;
+			targetProxy = 25E332BC80A0F6A3AE05A3A7DF23407D /* PBXContainerItemProxy */;
+		};
+		7028E7F1E740F504662A78741B0DC79C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = D4FEBE9046E7FFDB9A7F163C6FE36BB4 /* MBProgressHUD */;
+			targetProxy = A1B5D1FE6EA1E34BB46218CC130AAEA6 /* PBXContainerItemProxy */;
+		};
+		8EE2474EEC6CDD0D477289138EA0E49C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */;
+			targetProxy = 6E1EA38312D20631FDA0037AA384C589 /* PBXContainerItemProxy */;
+		};
+		A115F273B479E201ADE634074DBB0500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ConanAFN;
+			target = 93C5383905ED2381742B9CBCF935FE5C /* ConanAFN */;
+			targetProxy = F6570761E7CC5597BE3D0DD6836C3CC0 /* PBXContainerItemProxy */;
+		};
+		E9E64E04A30B48585544B93D159727D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RealReachability;
+			target = A1FFE08C521A89705123390DCCBBB8BD /* RealReachability */;
+			targetProxy = 89E536F177DD1A4A87DD2083D0672DDA /* PBXContainerItemProxy */;
+		};
+		EFDDDCB930EC825E78AF45EC31DBB631 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */;
+			targetProxy = F521A032463F2F330B7D8ED2FB88568C /* PBXContainerItemProxy */;
+		};
+		FB9642D2BD16016430F7714EB6A7D569 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RealReachability;
+			target = A1FFE08C521A89705123390DCCBBB8BD /* RealReachability */;
+			targetProxy = F23F7C89309D40F94CDCFE9958EC7EEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0304476D47CBB8C0DA091A0556192107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA8C2A37BCAB9D32CF108D5340EA7D20 /* Pods-ConanAFN_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ConanAFN_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ConanAFN_Example/Pods-ConanAFN_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ConanAFN_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		06CEB6E6F941E4036D1B867453C8188F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D312A93399FC2C0B17AEB70EC209FA4 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1899AE7129B632C5D0E1C827E083D43A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F7CF20E56A175FE12AE1E245C5A5FFB /* Pods-ConanAFN_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ConanAFN_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ConanAFN_Example/Pods-ConanAFN_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ConanAFN_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		19FE864D7F82696B826D827A8732945A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D312A93399FC2C0B17AEB70EC209FA4 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56C2BBABF0B00A8DB5DF6CA513A7DD55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF688CFC2310BB765FC0C1A09A5735A0 /* RealReachability.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RealReachability/RealReachability-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RealReachability/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RealReachability/RealReachability.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RealReachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		570877A1EEEF39C1B130CCEEB53C7B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7402918F801A49B6C5AFCB0E6C4E4A6 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		73B9A4891FA7D48E160D4F258DDF8737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C98B385BDA42DD4483AE2B8B642BDBD5 /* Pods-ConanAFN_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ConanAFN_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ConanAFN_Tests/Pods-ConanAFN_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ConanAFN_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7F895BD6FB6C1F2AA071D3EEB06970D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF688CFC2310BB765FC0C1A09A5735A0 /* RealReachability.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RealReachability/RealReachability-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RealReachability/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RealReachability/RealReachability.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RealReachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		86571CEFCDB4BF4AF7793CE1CC5BD7B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E4FDBDDCAC60886F5E6090CFC65C89 /* ConanAFN.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ConanAFN/ConanAFN-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ConanAFN/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ConanAFN/ConanAFN.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ConanAFN;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ABCD82B26AA53A28D3984B82572A33B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 076C6187E7FB42E2D457F550BBB76308 /* Pods-ConanAFN_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ConanAFN_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ConanAFN_Tests/Pods-ConanAFN_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ConanAFN_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BA174EDEC7397A5EAC699A96893136B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E4FDBDDCAC60886F5E6090CFC65C89 /* ConanAFN.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ConanAFN/ConanAFN-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ConanAFN/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ConanAFN/ConanAFN.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ConanAFN;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC3EE9EBDDF7444FC52168CE82FF000C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7402918F801A49B6C5AFCB0E6C4E4A6 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14B9E8EC0D314C770F8B3A5B9A0C5D25 /* Build configuration list for PBXNativeTarget "Pods-ConanAFN_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1899AE7129B632C5D0E1C827E083D43A /* Debug */,
+				0304476D47CBB8C0DA091A0556192107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31E01BC98C827BD8A78F94173CDCC418 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3EE9EBDDF7444FC52168CE82FF000C /* Debug */,
+				570877A1EEEF39C1B130CCEEB53C7B51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F5D63CF5E5A8D7E88EA2DCB41915020 /* Build configuration list for PBXNativeTarget "ConanAFN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86571CEFCDB4BF4AF7793CE1CC5BD7B4 /* Debug */,
+				BA174EDEC7397A5EAC699A96893136B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68BBEFE7BC1F29CD7E2AEC24B50D8792 /* Build configuration list for PBXNativeTarget "Pods-ConanAFN_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABCD82B26AA53A28D3984B82572A33B9 /* Debug */,
+				73B9A4891FA7D48E160D4F258DDF8737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A2D9D471F86F24A0D11FB02B671EA29 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CEB6E6F941E4036D1B867453C8188F /* Debug */,
+				19FE864D7F82696B826D827A8732945A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF46D9A62789074F2E32C4EF198BAFE /* Build configuration list for PBXNativeTarget "RealReachability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F895BD6FB6C1F2AA071D3EEB06970D0 /* Debug */,
+				56C2BBABF0B00A8DB5DF6CA513A7DD55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

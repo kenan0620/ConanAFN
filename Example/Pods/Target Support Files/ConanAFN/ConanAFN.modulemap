@@ -1,0 +1,6 @@
+framework module ConanAFN {
+  umbrella header "ConanAFN-umbrella.h"
+
+  export *
+  module * { export * }
+}
