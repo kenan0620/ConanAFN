@@ -26,7 +26,7 @@
     //设置请求超时时间、最大并发数
     [ConanAfnBase ConfigConanAfnTimeOut:20.0f MaxConcurrentOperationCount:3];
     //设置请求API域名(或者根目录)
-    NSString * url= @"https://baidu/api/";
+    NSString * url= @"http://baidu/api/";
     [ConanAfnAPI ConfigConanAfnBaseUrl:url];
 }
 

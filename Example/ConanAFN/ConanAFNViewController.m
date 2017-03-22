@@ -25,15 +25,14 @@
 {
     
     NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:
-                         @"18810261020", @"MobilePhone",
+                         @"110120130", @"MobilePhone",
                          @"123456", @"Password",
                          nil];
     
    
-    [ConanAfnAPI RequestWithURL:ConanAfnRequestMethodTypePOST Url:@"UserManage/AppLogin" Params:dic SuccessBlock:^(id returnData) {
+    [ConanAfnAPI RequestWithURL:ConanAfnRequestMethodTypePOST Url:@"Login" Params:dic SuccessBlock:^(id returnData) {
         
-        NSLog(@"returnData%@",returnData);
-        NSLog(@"%@",returnData[@"States"][@"Description"]);
+        
     } FailureBlock:^(NSError *error) {
         
     } ShowHUB:ConanShowNothing ShowMessage:@""];
