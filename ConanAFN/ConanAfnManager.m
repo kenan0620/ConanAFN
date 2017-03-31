@@ -7,11 +7,11 @@
 //
 
 #import "ConanAfnManager.h"
-#import "ConanAfnBase.h"
+#import "ConanShowAutoDismissAlertMessageView.h"
 #import "ConanSaveFilePath.h"
+
 static ConanAfnManager *conanAfn;
 #define ConanFileManager  [NSFileManager defaultManager]
-@import UIKit;
 @implementation ConanAfnManager
 
 +(ConanAfnManager *)sharedInstance
@@ -122,8 +122,6 @@ static ConanAfnManager *conanAfn;
            ShowHUB:(ConanShowHUDType)showHUB
        ShowMessage:(NSString *)message
 {
-    ConanLog(@"请求地址：%@;\n请求参数：%@·\n",url,senDic);
-
     NSURLSessionTask *POSTsessionTask = nil;
     [self showHud:showHUB ShowMessage:message];
 
@@ -142,7 +140,7 @@ static ConanAfnManager *conanAfn;
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [self dismissHud:showHUB];
 
-        ConanLog(@"conan~error~~%@",error);
+        ConanLog(@"error~~%@",error);
         if (failBlock) {
             failBlock(error);
         }

@@ -8,6 +8,9 @@
 
 #import "ConanNetStatus.h"
 
+#import "ConanMacroDefine.h"
+
+
 @implementation ConanNetStatus
 
 static ConanNetStatus *conanNetSington;
@@ -39,17 +42,20 @@ static ConanNetStatus *conanNetSington;
     if (status == RealStatusNotReachable)
     {
         netType =ConanNet_UNKNOW;
+        ConanLog(@"ConanNet_UNKNOW");
     }
     
     if (status == RealStatusViaWiFi)
     {
         netType =ConanNet_WIFI;
+        ConanLog(@"ConanNet_WIFI");
     }
     
-    if (status == RealStatusViaWWAN)
-    {
-        netType =ConanNet_WWAN;
-    }
+//    if (status == RealStatusViaWWAN)
+//    {
+//        netType =ConanNet_WWAN;
+//        ConanLog(@"ConanNet_WWAN");
+//    }
     
     WWANAccessType accessType = [GLobalRealReachability currentWWANtype];
     
@@ -58,22 +64,25 @@ static ConanNetStatus *conanNetSington;
         if (accessType == WWANType2G)
         {
             netType =ConanNet_2G;
+            ConanLog(@"ConanNet_2G");
         }
         else if (accessType == WWANType3G)
         {
             netType = ConanNet_3G;
+            ConanLog(@"ConanNet_3G");
         }
         else if (accessType == WWANType4G)
         {
             netType =ConanNet_4G;
+            ConanLog(@"ConanNet_4G");
         }
         else
         {
             netType =ConanNet_UNKNOW;
+            ConanLog(@"ConanNet_UNKNOW");
         }
     }
 
-    
     return  netType;
 }
 

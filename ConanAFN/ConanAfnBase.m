@@ -8,6 +8,9 @@
 
 #import "ConanAfnBase.h"
 
+
+#import "AFNetworkActivityIndicatorManager.h"
+
 #pragma mark - ============ 静态变量 ================
 static ConanAfnBase *conanAfnBase = nil;
 static AFHTTPSessionManager *afnManager = nil;

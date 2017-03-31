@@ -8,7 +8,6 @@
 
 #import "ConanMD5.h"
 #import <CommonCrypto/CommonDigest.h>
-
 @implementation ConanMD5
 /*
  *对字符串进行md5加密

@@ -7,14 +7,9 @@
 //
 
 #import <AFNetworking/AFNetworking.h>
-#import "ConanNetStatus.h"
-
-#import "ConanAfnEnumType.h"
 #import "ConanAfnBlock.h"
-#import "ConanMacroDefine.h"
-
-#import "ConanShowAutoDismissAlertMessageView.h"
-
+#import "ConanNetStatus.h"
+#import "ConanAfnBase.h"
 @interface ConanAfnManager : AFHTTPSessionManager
 
 

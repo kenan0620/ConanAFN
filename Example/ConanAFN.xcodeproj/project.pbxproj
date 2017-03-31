@@ -39,6 +39,11 @@
 /* Begin PBXFileReference section */
 		1776EDA88C1CE6D91184FFCF /* Pods-ConanAFN_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConanAFN_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConanAFN_Tests/Pods-ConanAFN_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		18456ED050311C23F8AE6212 /* ConanAFN.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ConanAFN.podspec; path = ../ConanAFN.podspec; sourceTree = "<group>"; };
+		274B7FCA1E8E23B1007AB786 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../../Library/Developer/Xcode/DerivedData/ConanAFN-gdtlwyopwmdbdzgnnwbtpfnowqaa/Build/Products/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
+		274B7FCC1E8E23B6007AB786 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = "../../../Library/Developer/Xcode/DerivedData/ConanAFN-gdtlwyopwmdbdzgnnwbtpfnowqaa/Build/Products/Debug-iphoneos/MBProgressHUD/MBProgressHUD.framework"; sourceTree = "<group>"; };
+		274B7FCE1E8E23BC007AB786 /* RealReachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealReachability.framework; path = "../../../Library/Developer/Xcode/DerivedData/ConanAFN-gdtlwyopwmdbdzgnnwbtpfnowqaa/Build/Products/Debug-iphoneos/RealReachability/RealReachability.framework"; sourceTree = "<group>"; };
+		274B7FD01E8E23C3007AB786 /* ConanAFN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConanAFN.framework; path = "../../../Library/Developer/Xcode/DerivedData/ConanAFN-gdtlwyopwmdbdzgnnwbtpfnowqaa/Build/Products/Debug-iphoneos/ConanAFN/ConanAFN.framework"; sourceTree = "<group>"; };
+		274B7FD21E8E23C7007AB786 /* Pods_ConanAFN_Tests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ConanAFN_Tests.framework; path = "Pods/../build/Debug-iphoneos/Pods_ConanAFN_Tests.framework"; sourceTree = "<group>"; };
 		3DC55E79421FC0DFAA20118E /* Pods-ConanAFN_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConanAFN_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConanAFN_Example/Pods-ConanAFN_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ConanAFN_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConanAFN_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,6 +124,11 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				274B7FD21E8E23C7007AB786 /* Pods_ConanAFN_Tests.framework */,
+				274B7FD01E8E23C3007AB786 /* ConanAFN.framework */,
+				274B7FCE1E8E23BC007AB786 /* RealReachability.framework */,
+				274B7FCC1E8E23B6007AB786 /* MBProgressHUD.framework */,
+				274B7FCA1E8E23B1007AB786 /* AFNetworking.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -538,6 +548,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 938EMAYW6W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ConanAFN/ConanAFN-Prefix.pch";
 				INFOPLIST_FILE = "ConanAFN/ConanAFN-Info.plist";
@@ -555,6 +569,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 938EMAYW6W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ConanAFN/ConanAFN-Prefix.pch";
 				INFOPLIST_FILE = "ConanAFN/ConanAFN-Info.plist";

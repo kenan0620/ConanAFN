@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+#import "ConanMacroDefine.h"
 
 @import UIKit;
 @import RealReachability;

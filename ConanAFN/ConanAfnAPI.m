@@ -7,6 +7,8 @@
 //
 
 #import "ConanAfnAPI.h"
+
+
 static NSString *baseUrl = nil;
 
 @implementation ConanAfnAPI
@@ -22,7 +24,7 @@ static NSString *baseUrl = nil;
 +(NSString *)setNetUrl :(NSString *)url
 {
     NSString *ProductUrl=[NSString stringWithFormat:@"%@%@",baseUrl,url];
-    ConanLog(@"ProductUrl~~%@",ProductUrl);
+    ConanLog(@"%@",ProductUrl);
     return ProductUrl;
 }
 
