@@ -12,8 +12,8 @@
 #import "ConanAfnBlock.h"
 #import "ConanAfnEnumType.h"
 
-@import MBProgressHUD;
-@import AFNetworking;
+#import <AFNetworking/AFNetworking.h>
+#import <MBProgressHUD/MBProgressHUD.h>
 @interface ConanAfnBase : NSObject<MBProgressHUDDelegate>
 
 @property (nonatomic ,strong) MBProgressHUD *conanHud;
