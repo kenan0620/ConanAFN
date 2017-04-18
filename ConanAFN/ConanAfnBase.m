@@ -138,6 +138,7 @@ static NSMutableArray *conanRequestTasks;//所有的请求数组
                 default:
                     break;
             }
+
             //配置请求头
             for (NSString *key in conanAfnHeaderDic.allKeys) {
                 if (conanAfnHeaderDic[key] != nil) {
@@ -161,6 +162,15 @@ static NSMutableArray *conanRequestTasks;//所有的请求数组
             manager.requestSerializer.timeoutInterval = conanAfnTimeOut;
             manager.operationQueue.maxConcurrentOperationCount = conanAfnMaxCOPCount;
             afnManager =manager;
+        }else
+        {
+            //配置请求头
+            for (NSString *key in conanAfnHeaderDic.allKeys) {
+                if (conanAfnHeaderDic[key] != nil) {
+                    [afnManager.requestSerializer setValue:conanAfnHeaderDic[key] forHTTPHeaderField:key];
+                }
+            }
+            
         }
     }
     

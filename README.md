@@ -32,3 +32,5 @@ ConanAFN is available under the MIT license. See the LICENSE file for more info.
 ~~> 1.0.0 ConanAFN。对AFN进行二次封装，逐步增加新的方法，不断的进行更新。
 
 ~~> 1.0.1 ConanAFN。项目引用更新。
+
+~~> 1.0.3 ConanAFN。项目请求token设置优化。
