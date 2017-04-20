@@ -34,3 +34,5 @@ ConanAFN is available under the MIT license. See the LICENSE file for more info.
 ~~> 1.0.1 ConanAFN。项目引用更新。
 
 ~~> 1.0.3 ConanAFN。项目请求token设置优化。
+
+~~> 1.0.3 ConanAFN 项目更新。

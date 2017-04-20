@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConanAFN'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = '网络框架库 ConanAFN.'
 
 

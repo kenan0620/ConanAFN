@@ -10,6 +10,7 @@
 
 
 #import "AFNetworkActivityIndicatorManager.h"
+#define tokenDefaults [NSUserDefaults standardUserDefaults]
 
 #pragma mark - ============ 静态变量 ================
 static ConanAfnBase *conanAfnBase = nil;
@@ -35,6 +36,7 @@ static NSMutableArray *conanRequestTasks;//所有的请求数组
 +(void)ConfigConanAfnHeaders:(NSDictionary *)headerDic
 {
     conanAfnHeaderDic = headerDic;
+    [tokenDefaults setObject:conanAfnHeaderDic forKey:@"ConanToken"];
 }
 
 +(void)ConfigConanAfnTimeOut:(NSTimeInterval)timeOut MaxConcurrentOperationCount:(NSInteger)maxConcurrentOperationCount
@@ -140,9 +142,10 @@ static NSMutableArray *conanRequestTasks;//所有的请求数组
             }
 
             //配置请求头
-            for (NSString *key in conanAfnHeaderDic.allKeys) {
-                if (conanAfnHeaderDic[key] != nil) {
-                    [manager.requestSerializer setValue:conanAfnHeaderDic[key] forHTTPHeaderField:key];
+            NSDictionary *tokenDic = [tokenDefaults objectForKey:@"ConanToken"];
+            for (NSString *key in tokenDic.allKeys) {
+                if (tokenDic[key] != nil) {
+                    [manager.requestSerializer setValue:tokenDic[key] forHTTPHeaderField:key];
                 }
             }
             
@@ -164,13 +167,13 @@ static NSMutableArray *conanRequestTasks;//所有的请求数组
             afnManager =manager;
         }else
         {
+            NSDictionary *tokenDic = [tokenDefaults objectForKey:@"ConanToken"];
             //配置请求头
-            for (NSString *key in conanAfnHeaderDic.allKeys) {
-                if (conanAfnHeaderDic[key] != nil) {
-                    [afnManager.requestSerializer setValue:conanAfnHeaderDic[key] forHTTPHeaderField:key];
+            for (NSString *key in tokenDic.allKeys) {
+                if (tokenDic[key] != nil) {
+                    [afnManager.requestSerializer setValue:tokenDic[key] forHTTPHeaderField:key];
                 }
             }
-            
         }
     }
     
