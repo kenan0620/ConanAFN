@@ -20,6 +20,40 @@ it, simply add the following line to your Podfile:
 pod "ConanAFN"
 ```
 
+## Usage
+On AppDelegate import <ConanAFN/ConanAfnAPI.h>
+
+set config contents and listening the network
+
+//设置请求数据类型、返回数据类型
+[ConanAfnBase ConfigRequestType:2 ResponseDataType:ConanAfnResponseDataTypeJSON];
+//设置请求超时时间、最大并发数
+[ConanAfnBase ConfigConanAfnTimeOut:20.0f MaxConcurrentOperationCount:3];
+//设置请求API域名(或者根目录)
+NSString * url= @"https://api.baidu.com/";
+[ConanAfnAPI ConfigConanAfnBaseUrl:url];
+
+### Usage in the eg
+
+NSDictionary *jsonDic = @{};
+
+request type ,get or post
+SuccessBlock ,succecc
+FailureBlock ,failure
+ConanShowNothing ,showHUDtype
+ShowMessage ,ShowMessage
+
+
+ConanAfnRequestMethodTypeGET
+[ConanAfnAPI RequestWithURL:ConanAfnRequestMethodTypeGET Url:jsonUrl Params:jsonDic SuccessBlock:^(id returnData) {
+
+
+} FailureBlock:^(NSError *error) {
+
+} ShowHUB:ConanShowNothing ShowMessage:@""];
+
+
+
 ## Author
 
 kenan, houkenan0620@126.com
