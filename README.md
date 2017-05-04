@@ -23,7 +23,7 @@ pod "ConanAFN"
 ## Usage
 On AppDelegate import <ConanAFN/ConanAfnAPI.h>
 
-set config contents and listening the network
+set config contents and Monitor the network
 
 //设置请求数据类型、返回数据类型
 [ConanAfnBase ConfigRequestType:2 ResponseDataType:ConanAfnResponseDataTypeJSON];
