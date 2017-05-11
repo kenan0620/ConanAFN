@@ -70,3 +70,5 @@ ConanAFN is available under the MIT license. See the LICENSE file for more info.
 ~~> 1.0.3 ConanAFN。项目请求token设置优化。
 
 ~~> 1.0.4 ConanAFN 项目更新,解决长期连接问题。
+
+~~> 1.0.5 

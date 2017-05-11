@@ -10,7 +10,7 @@
 
 #import "ConanMacroDefine.h"
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 #import <RealReachability/RealReachability.h>
 typedef NS_ENUM(NSInteger , ConanNetWorkType) {
     ConanNet_UNKNOW = 0,    // 未知,无网络
