@@ -59,4 +59,5 @@ typedef NSURLSessionTask ConanURLSessionTask;
 typedef void(^ConanResponseSuccess)(id returnData);
 typedef void(^ConanResponseFail)(NSError * error);
 typedef void(^ConanResponseDownloadSuccess)(id returnData , NSString *filePath);
+typedef void(^ConanResponseDownloadFile)(NSString *filePath);
 #endif /* ConanAfnBlock_h */

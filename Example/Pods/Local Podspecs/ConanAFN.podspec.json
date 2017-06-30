@@ -1,6 +1,6 @@
 {
   "name": "ConanAFN",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "summary": "网络框架库 ConanAFN.",
   "description": "ConanAFN。对AFN进行二次封装，逐步增加新的方法，不断的进行更新。",
   "homepage": "https://github.com/kenan0620/ConanAFN",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/kenan0620/ConanAFN.git",
-    "tag": "1.0.4"
+    "tag": "1.0.6"
   },
   "platforms": {
     "ios": "8.0"
@@ -26,9 +26,6 @@
     ],
     "RealReachability": [
       "~> 1.1.8"
-    ],
-    "MBProgressHUD": [
-      "~> 1.0.0"
     ]
   }
 }

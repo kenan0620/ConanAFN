@@ -7,9 +7,10 @@
 //
 
 #import "ConanAfnManager.h"
-#import "ConanShowAutoDismissAlertMessageView.h"
+#import <UIKit/UIKit.h>
+#import "ConanAfnBase.h"
 #import "ConanSaveFilePath.h"
-
+#import "ConanEncryption.h"
 static ConanAfnManager *conanAfn;
 #define ConanFileManager  [NSFileManager defaultManager]
 @implementation ConanAfnManager
@@ -86,22 +87,18 @@ static ConanAfnManager *conanAfn;
 {
     NSURLSessionTask *GETsessionTask = nil;
     
-    [self showHud:showHUB ShowMessage:message];
-    
     AFHTTPSessionManager *manager=[ConanAfnBase manager];
     
    GETsessionTask= [manager GET:url parameters:senDic progress:^(NSProgress * _Nonnull downloadProgress) {
 
    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-         [self dismissHud:showHUB];
 
         ConanLog(@"请求地址：%@;\n\n请求参数：%@··\n\n返回结果：%@。\n\n",url,senDic,responseObject);
         if (successBlock) {
             successBlock(responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-         [self dismissHud:showHUB];
 
         ConanLog(@"error~~%@",error);
         if (failBlock) {
@@ -123,14 +120,12 @@ static ConanAfnManager *conanAfn;
        ShowMessage:(NSString *)message
 {
     NSURLSessionTask *POSTsessionTask = nil;
-    [self showHud:showHUB ShowMessage:message];
 
     AFHTTPSessionManager *manager=[ConanAfnBase manager];
    POSTsessionTask= [manager POST:url parameters:senDic progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        [self dismissHud:showHUB];
         
         ConanLog(@"请求地址：%@;\n请求参数：%@··\n返回结果：%@。\n",url,senDic,responseObject);
         if (successBlock) {
@@ -138,7 +133,6 @@ static ConanAfnManager *conanAfn;
         }
 
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [self dismissHud:showHUB];
 
         ConanLog(@"error~~%@",error);
         if (failBlock) {
@@ -315,8 +309,16 @@ static ConanAfnManager *conanAfn;
             BOOL wroteToFileIsSuccess = [fileData writeToFile:filePath atomically:YES];
             
             if (wroteToFileIsSuccess) {
+                
                 NSLog(@"wroteToFileIsSuccess~~success");
-                successBlock(responseObject,filePath);
+                NSLog(@"%@\n%@",[ConanEncryption ConanMd5HashOfFileAtPath:filePath],fileName);
+                if ([[ConanEncryption ConanMd5HashOfFileAtPath:filePath] isEqualToString:fileName]) {
+                    successBlock(responseObject,filePath);
+                }else{
+                    NSLog(@"下载错误");
+                    [fileData writeToFile:filePath atomically:YES];
+                    successBlock(responseObject,filePath);
+                }
             } else {
                 NSLog(@"wroteToFileIsSuccess~~failure");
                 successBlock(responseObject,@"");
@@ -396,67 +398,28 @@ static ConanAfnManager *conanAfn;
     return conanSessionTask;
 }
 
-
-
-#pragma mark ============ 弹框展示与消失 =================
--(void)showHud : (ConanShowHUDType )showHud  ShowMessage:(NSString *)message
-{
-    switch (showHud ) {
+- (void)DownloadFileWithMd5:(NSString *)url
+                   FileName:(NSString *)fileName
+              SaveFileCtype:(NSString *)ctype
+               SaveFileType:(NSString *)type
+               SaveFilePath:(ConanCacheFilePathType )filePathType
+          DownloadFileBlock:(ConanResponseDownloadFile )downloadFileBlock{
+    NSString *downloadFilePath = [ConanSaveFilePath ConanConanSaveFilePath:filePathType FileType:type FileName:fileName FileCtype:ctype];
+    
+    if ([ConanFileManager fileExistsAtPath:downloadFilePath]) {
+        downloadFileBlock(downloadFilePath);
+    }else{
+        [self GetDownloadFileWithURL:ConanAfnRequestMethodTypeGET Url:url Params:@{@"MD5":fileName} SaveFileName:fileName SaveFileCtype:ctype SaveFileType:type SaveFilePath:filePathType Progress:^(int64_t bytesRead, int64_t totalBytesRead, int64_t totalBytesExpectedToRead) {
             
-        case ConanShowHUD:
-            [[ConanAfnBase sharedInstance].conanHud showAnimated:YES];
-            break;
-        case ConanShowHUDMessage:
-            [ConanAfnBase sharedInstance].conanHud.label.text = message;
-            break;
-        case ConanShowAutoDismissLoadingMessage:
-            [ConanShowAutoDismissAlertMessageView ConanShowLoading:message];
-            break;
-        case ConanShowAutoDismissSuccessMessage:
-            [ConanShowAutoDismissAlertMessageView ConanShowSuccessMessage:message];
-            break;
-        case ConanShowAutoDismissFailMessage:
-            [ConanShowAutoDismissAlertMessageView ConanShowFailMessage:message];
-            break;
-        case ConanShowNothing:
-            ConanLog(@"ConanShowNothing");
-            break;
+        } SuccessBlock:^(id returnData, NSString *filePath) {
+            if (downloadFileBlock) {
+                downloadFileBlock(filePath);
+            }
+        } FailureBlock:^(NSError *error) {
             
-        default:
-            ConanLog(@"ConanShowHUDTypeDefault");
-            break;
+        } ShowHUD:ConanShowNothing ShowMessage:@""];
     }
-}
-
--(void)dismissHud :(ConanShowHUDType )disMissHud
-{
-    switch (disMissHud) {
-            
-        case ConanShowHUD:
-            [[ConanAfnBase sharedInstance].conanHud hideAnimated:YES];
-            break;
-        case ConanShowHUDMessage:
-            [[ConanAfnBase sharedInstance].conanHud hideAnimated:YES];
-            break;
-        case ConanShowAutoDismissLoadingMessage:
-            [ConanShowAutoDismissAlertMessageView ConanShowDismissHud];
-            break;
-        case ConanShowAutoDismissSuccessMessage:
-            [ConanShowAutoDismissAlertMessageView ConanShowDismissHud];
-            break;
-        case ConanShowAutoDismissFailMessage:
-           [ConanShowAutoDismissAlertMessageView ConanShowDismissHud];
-            break;
-
-        case ConanShowNothing:
-            ConanLog(@"ConanShowNothing");
-            break;
-            
-        default:
-            ConanLog(@"ConanShowHUDTypeDefault");
-            break;
-    }
-
+    
 }
 
 @end

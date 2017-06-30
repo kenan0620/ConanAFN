@@ -65,4 +65,20 @@
                                FailureBlock:(ConanResponseFail )failBlock
                                     ShowHUD:(ConanShowHUDType )showType
                                 ShowMessage:(NSString *)message;
+
+/**
+ 
+ 下载文件，进行本地资源保存(保存成功后为path为：type/fileName.ctype)
+ 
+    @param fileName 保存的文件名
+    @param ctype 保存的文件扩展名(后缀名)
+    @param type 保存的文件类型(图片png、视频mp4、音频mp3)(尽量英文命名)
+    @param filePathType 保存的文件位置
+    @param downloadFileBlock 资源下载路径的回调
+ */
++ (void)DownloadFileWithMd5:(NSString *)fileName
+                    SaveFileCtype:(NSString *)ctype
+                     SaveFileType:(NSString *)type
+               SaveFilePath:(ConanCacheFilePathType )filePathType
+               DownloadFileBlock:(ConanResponseDownloadFile )downloadFileBlock;
 @end

@@ -8,20 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+#import "AFNetworking.h"
 
 #import "ConanAfnBlock.h"
 #import "ConanAfnEnumType.h"
 
-#import <AFNetworking/AFNetworking.h>
-#import <MBProgressHUD/MBProgressHUD.h>
-@interface ConanAfnBase : NSObject<MBProgressHUDDelegate>
+@interface ConanAfnBase : NSObject
 
-@property (nonatomic ,strong) MBProgressHUD *conanHud;
 
 /**
  *  ConanAfnBase单例
  *
- *  @return GDHNetworkObject的单例对象
+ *  @return NetworkObject的单例对象
  */
 +(ConanAfnBase *)sharedInstance;
 

@@ -7,8 +7,7 @@
 //
 
 #import "ConanAfnAPI.h"
-
-
+#import "ConanSaveFilePath.h"
 static NSString *baseUrl = nil;
 
 @implementation ConanAfnAPI
@@ -86,5 +85,19 @@ static NSString *baseUrl = nil;
     [sessionTask resume];
     
     return sessionTask;
+}
+
++ (void)DownloadFileWithMd5:(NSString *)fileName
+              SaveFileCtype:(NSString *)ctype
+               SaveFileType:(NSString *)type
+               SaveFilePath:(ConanCacheFilePathType )filePathType
+          DownloadFileBlock:(ConanResponseDownloadFile )downloadFileBlock{
+    
+    [[ConanAfnManager sharedInstance]DownloadFileWithMd5:[self setNetUrl:@"Resource/DownloadResource"] FileName:fileName SaveFileCtype:ctype SaveFileType:type SaveFilePath:filePathType DownloadFileBlock:^(NSString *filePath) {
+        if (downloadFileBlock) {
+            downloadFileBlock(filePath);
+        }
+    }];
+    
 }
 @end

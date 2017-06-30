@@ -7,7 +7,7 @@
 //
 
 #import "ConanAFNViewController.h"
-#import <ConanAFN/ConanAfnAPI.h>
+
 @interface ConanAFNViewController ()
 
 @end
@@ -24,17 +24,7 @@
 - (void)Post
 {
     
-    NSString *jsonUrl=@"statuses/public_timeline.json";
-    NSString *access_token=@"2.00NofgBD0L1k4pc584f79cc48SKGdD";
-    NSString *count=@"10";
-    
-    NSDictionary *jsonDic = NSDictionaryOfVariableBindings(access_token,count);
-    [ConanAfnAPI RequestWithURL:ConanAfnRequestMethodTypeGET Url:jsonUrl Params:jsonDic SuccessBlock:^(id returnData) {
-        
-        
-    } FailureBlock:^(NSError *error) {
-        
-    } ShowHUB:ConanShowNothing ShowMessage:@""];
+   
     
     
 }
