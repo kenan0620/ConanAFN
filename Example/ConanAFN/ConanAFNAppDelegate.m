@@ -8,31 +8,16 @@
 
 #import "ConanAFNAppDelegate.h"
 
-#import <ConanAFN/ConanAfnAPI.h>
 
 @implementation ConanAFNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
-    [self ConanAfnSetup];
-    [[ConanNetStatus sharedInstance]listening];
+
     
     return YES;
 }
-
--(void)ConanAfnSetup
-{
-    //设置请求数据类型、返回数据类型
-    [ConanAfnBase ConfigRequestType:2 ResponseDataType:ConanAfnResponseDataTypeJSON];
-    //设置请求超时时间、最大并发数
-    [ConanAfnBase ConfigConanAfnTimeOut:20.0f MaxConcurrentOperationCount:3];
-    //设置请求API域名(或者根目录)
-    NSString * url= @"https://api.weibo.com/2/";
-    [ConanAfnAPI ConfigConanAfnBaseUrl:url];
-}
-
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

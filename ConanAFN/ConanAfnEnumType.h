@@ -23,9 +23,9 @@ typedef NS_ENUM(NSInteger ,ConanAfnRequestMethodType)
  *定义请求发送数据的枚举类型
  */
 typedef NS_ENUM(NSUInteger, ConanAfnRequestSendDataType) {
-    ConanAfnRequestSendDataTypeJSON = 0, // 默认 JSON
-    ConanAfnRequestSendDataTypePlainText  = 1 ,// 普通text/html 二进制格式
-    ConanAfnRequestSendDataTypeAFProperty = 2 ,//PList(是一种特殊的XML,解析起来相对容易)
+    ConanAfnRequestSendDataTypeJSON = 1, // 默认 JSON
+    ConanAfnRequestSendDataTypePlainText  = 2 ,// 普通text/html 二进制格式
+    ConanAfnRequestSendDataTypeAFProperty = 3 ,//PList(是一种特殊的XML,解析起来相对容易)
 };
 
 /*

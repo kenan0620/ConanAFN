@@ -7,9 +7,13 @@
 //
 
 #import <AFNetworking/AFNetworking.h>
-#import "ConanAfnBlock.h"
 #import "ConanNetStatus.h"
-#import "ConanAfnBase.h"
+
+#import "ConanAfnEnumType.h"
+#import "ConanAfnBlock.h"
+#import "ConanMacroDefine.h"
+
+
 @interface ConanAfnManager : AFHTTPSessionManager
 
 
@@ -87,6 +91,12 @@
                                     ShowHUD:(ConanShowHUDType )showType
                                 ShowMessage:(NSString *)message;
 
+- (void)DownloadFileWithMd5:(NSString *)url
+                   FileName:(NSString *)fileName
+              SaveFileCtype:(NSString *)ctype
+               SaveFileType:(NSString *)type
+               SaveFilePath:(ConanCacheFilePathType )filePathType
+          DownloadFileBlock:(ConanResponseDownloadFile )downloadFileBlock;
 @end
 
 

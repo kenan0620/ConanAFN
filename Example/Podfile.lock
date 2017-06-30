@@ -14,11 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - ConanAFN (1.0.4):
+  - ConanAFN (1.0.6):
     - AFNetworking (~> 3.1.0)
-    - MBProgressHUD (~> 1.0.0)
     - RealReachability (~> 1.1.8)
-  - MBProgressHUD (1.0.0)
   - RealReachability (1.1.8):
     - RealReachability/Connection (= 1.1.8)
     - RealReachability/Ping (= 1.1.8)
@@ -34,8 +32,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  ConanAFN: a407407f046e000298428dd070d9b672b194863c
-  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  ConanAFN: 2fb417112b26c740c0015274cbd6729d506eacaa
   RealReachability: e6c8a2bbffa316006e8c282efc1ee2567d61a920
 
 PODFILE CHECKSUM: 46ed7686e9ce1e6fb99df690ecc66928f5af1b97

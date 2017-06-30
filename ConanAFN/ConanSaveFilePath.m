@@ -7,10 +7,9 @@
 //
 
 #import "ConanSaveFilePath.h"
-#import "ConanMacroDefine.h"
-
 
 @implementation ConanSaveFilePath
+
 +(NSString *)ConanConanSaveFilePath:(ConanCacheFilePathType )filePathType
                            FileType:(NSString *)type
                            FileName:(NSString *)fileName
@@ -60,7 +59,6 @@
             break;
     }
 
-    ConanLog(@"%@",path);
     return path;
 }
 

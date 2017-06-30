@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConanAFN'
-  s.version          = '1.0.5'
+  s.version          = '1.0.6'
   s.summary          = '网络框架库 ConanAFN.'
 
 
@@ -20,6 +20,5 @@ s.source_files = 'ConanAFN/*.{h,m}'
 
 s.dependency 'AFNetworking', '~> 3.1.0'
 s.dependency 'RealReachability', '~> 1.1.8'
-s.dependency 'MBProgressHUD', '~> 1.0.0'
 
 end

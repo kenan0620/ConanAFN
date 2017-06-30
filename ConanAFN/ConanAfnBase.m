@@ -7,10 +7,7 @@
 //
 
 #import "ConanAfnBase.h"
-
-
 #import "AFNetworkActivityIndicatorManager.h"
-#define tokenDefaults [NSUserDefaults standardUserDefaults]
 
 #pragma mark - ============ 静态变量 ================
 static ConanAfnBase *conanAfnBase = nil;
@@ -36,7 +33,6 @@ static NSMutableArray *conanRequestTasks;//所有的请求数组
 +(void)ConfigConanAfnHeaders:(NSDictionary *)headerDic
 {
     conanAfnHeaderDic = headerDic;
-    [tokenDefaults setObject:conanAfnHeaderDic forKey:@"ConanToken"];
 }
 
 +(void)ConfigConanAfnTimeOut:(NSTimeInterval)timeOut MaxConcurrentOperationCount:(NSInteger)maxConcurrentOperationCount
@@ -49,36 +45,6 @@ static NSMutableArray *conanRequestTasks;//所有的请求数组
 {
     conanAfnRequestSendDataType = requestSendendDataType;
     conanAfnResponseDataType = responseDataType;
-}
-
-#pragma mark - ============  MBProgressHUD ================
-
--(MBProgressHUD *)conanHud {
-    if (_conanHud == nil) {
-        //x_hud = [[MBProgressHUD alloc] initWithView:[UIApplication sharedApplication].keyWindow];
-        _conanHud = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
-        // 隐藏时候从父控件中移除
-        _conanHud.removeFromSuperViewOnHide = YES;
-        //设置风火轮的颜色
-        _conanHud.contentColor=[ UIColor whiteColor];
-        //设置风火轮的w文字
-//        _conanHud.label.text= @"加载中~~~";
-//        _conanHud.label.textColor = [UIColor redColor];
-        
-        //设置风火轮的方形背景颜色
-        _conanHud.bezelView.backgroundColor= [UIColor blackColor];
-//        _conanHud.bezelView.alpha = 0.5;
-        // YES代表需要蒙版效果
-//            _conanHud.dimBackground = YES;
-        _conanHud.mode = MBProgressHUDModeIndeterminate;
-        _conanHud.animationType = MBProgressHUDAnimationFade;
-        _conanHud.delegate = self;
-    }
-    return _conanHud;
-}
-
-- (void)hudWasHidden:(MBProgressHUD *)conanHud {
-    self.conanHud = nil;
 }
 
 #pragma mark - ============ Private ================
@@ -140,12 +106,10 @@ static NSMutableArray *conanRequestTasks;//所有的请求数组
                 default:
                     break;
             }
-
             //配置请求头
-            NSDictionary *tokenDic = [tokenDefaults objectForKey:@"ConanToken"];
-            for (NSString *key in tokenDic.allKeys) {
-                if (tokenDic[key] != nil) {
-                    [manager.requestSerializer setValue:tokenDic[key] forHTTPHeaderField:key];
+            for (NSString *key in conanAfnHeaderDic.allKeys) {
+                if (conanAfnHeaderDic[key] != nil) {
+                    [manager.requestSerializer setValue:conanAfnHeaderDic[key] forHTTPHeaderField:key];
                 }
             }
             
@@ -165,15 +129,6 @@ static NSMutableArray *conanRequestTasks;//所有的请求数组
             manager.requestSerializer.timeoutInterval = conanAfnTimeOut;
             manager.operationQueue.maxConcurrentOperationCount = conanAfnMaxCOPCount;
             afnManager =manager;
-        }else
-        {
-            NSDictionary *tokenDic = [tokenDefaults objectForKey:@"ConanToken"];
-            //配置请求头
-            for (NSString *key in tokenDic.allKeys) {
-                if (tokenDic[key] != nil) {
-                    [afnManager.requestSerializer setValue:tokenDic[key] forHTTPHeaderField:key];
-                }
-            }
         }
     }
     
