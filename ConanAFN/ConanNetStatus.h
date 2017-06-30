@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RealReachability.h"
+#import <RealReachability/RealReachability.h>
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger , ConanNetWorkType) {

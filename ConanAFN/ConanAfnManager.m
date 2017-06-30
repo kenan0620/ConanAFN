@@ -7,10 +7,11 @@
 //
 
 #import "ConanAfnManager.h"
-#import <UIKit/UIKit.h>
+
 #import "ConanAfnBase.h"
 #import "ConanSaveFilePath.h"
 #import "ConanEncryption.h"
+#import "ConanMacroDefine.h"
 static ConanAfnManager *conanAfn;
 #define ConanFileManager  [NSFileManager defaultManager]
 @implementation ConanAfnManager

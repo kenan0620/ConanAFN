@@ -11,7 +11,6 @@
 
 #import "ConanAfnEnumType.h"
 #import "ConanAfnBlock.h"
-#import "ConanMacroDefine.h"
 
 
 @interface ConanAfnManager : AFHTTPSessionManager
