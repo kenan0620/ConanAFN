@@ -214,7 +214,6 @@ static ConanAfnManager *conanAfn;
                                         Url:(NSString *)url
                                      Params:(NSDictionary *)senDic
                                SaveFileName:(NSString *)fileName
-                              SaveFileCtype:(NSString *)ctype
                                SaveFileType:(NSString *)type
                                SaveFilePath:(ConanCacheFilePathType )filePathType
                                    Progress:(ConanDownloadProgress )progressBlock
@@ -225,7 +224,7 @@ static ConanAfnManager *conanAfn;
 {
     switch (requestType) {
         case ConanAfnRequestMethodTypeGET:
-            return [self GetDownloadFileWithURL:requestType Url:url Params:senDic SaveFileName:fileName SaveFileCtype:ctype SaveFileType:type SaveFilePath:filePathType Progress:^(int64_t bytesRead, int64_t totalBytesRead, int64_t totalBytesExpectedToRead) {
+            return [self GetDownloadFileWithURL:requestType Url:url Params:senDic SaveFileName:fileName SaveFileType:type SaveFilePath:filePathType Progress:^(int64_t bytesRead, int64_t totalBytesRead, int64_t totalBytesExpectedToRead) {
                 if (progressBlock) {
                     progressBlock(bytesRead,totalBytesRead,totalBytesExpectedToRead);
                 }
@@ -242,7 +241,7 @@ static ConanAfnManager *conanAfn;
             
             break;
         case ConanAfnRequestMethodTypePOST:
-            return [self PostDownloadFileWithURL:requestType Url:url Params:senDic SaveFileName:fileName SaveFileCtype:ctype SaveFileType:type SaveFilePath:filePathType Progress:^(int64_t bytesRead, int64_t totalBytesRead, int64_t totalBytesExpectedToRead) {
+            return [self PostDownloadFileWithURL:requestType Url:url Params:senDic SaveFileName:fileName SaveFileType:type SaveFilePath:filePathType Progress:^(int64_t bytesRead, int64_t totalBytesRead, int64_t totalBytesExpectedToRead) {
                 if (progressBlock) {
                     progressBlock(bytesRead,totalBytesRead,totalBytesExpectedToRead);
                 }
@@ -271,7 +270,6 @@ static ConanAfnManager *conanAfn;
                                         Url:(NSString *)url
                                      Params:(NSDictionary *)senDic
                                SaveFileName:(NSString *)fileName
-                              SaveFileCtype:(NSString *)ctype
                                SaveFileType:(NSString *)type
                                   SaveFilePath:(ConanCacheFilePathType )filePathType
                                    Progress:(ConanDownloadProgress )progressBlock
@@ -284,9 +282,9 @@ static ConanAfnManager *conanAfn;
     //增加Serializer设置，文件下载，以防止下载失败
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    NSString *filePath = [ConanSaveFilePath ConanConanSaveFilePath:filePathType FileType:type FileName:fileName FileCtype:ctype];
+    NSString *filePath = [ConanSaveFilePath ConanConanSaveFilePath:filePathType FileType:type FileName:fileName];
     
-    NSString *file = [ConanSaveFilePath ConanConanSaveFilePath:filePathType FileType:type FileName:@"" FileCtype:@""];
+    NSString *file = [ConanSaveFilePath ConanConanSaveFilePath:filePathType FileType:type FileName:@""];
     
     BOOL isExist = [ConanFileManager fileExistsAtPath:file];
     
@@ -336,7 +334,6 @@ static ConanAfnManager *conanAfn;
                                         Url:(NSString *)url
                                      Params:(NSDictionary *)senDic
                                SaveFileName:(NSString *)fileName
-                              SaveFileCtype:(NSString *)ctype
                                SaveFileType:(NSString *)type
                                    SaveFilePath:(ConanCacheFilePathType )filePathType
                                    Progress:(ConanDownloadProgress )progressBlock
@@ -349,7 +346,7 @@ static ConanAfnManager *conanAfn;
     //增加Serializer设置，文件下载，以防止下载失败
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    NSString *filePath = [ConanSaveFilePath ConanConanSaveFilePath:filePathType FileType:type FileName:fileName FileCtype:ctype];
+    NSString *filePath = [ConanSaveFilePath ConanConanSaveFilePath:filePathType FileType:type FileName:fileName];
 
     ConanURLSessionTask *conanSessionTask = nil;
 
@@ -387,16 +384,15 @@ static ConanAfnManager *conanAfn;
 
 - (void)DownloadFileWithMd5:(NSString *)url
                    FileName:(NSString *)fileName
-              SaveFileCtype:(NSString *)ctype
                SaveFileType:(NSString *)type
                SaveFilePath:(ConanCacheFilePathType )filePathType
           DownloadFileBlock:(ConanResponseDownloadFile )downloadFileBlock{
-    NSString *downloadFilePath = [ConanSaveFilePath ConanConanSaveFilePath:filePathType FileType:type FileName:fileName FileCtype:ctype];
+    NSString *downloadFilePath = [ConanSaveFilePath ConanConanSaveFilePath:filePathType FileType:type FileName:fileName];
     
     if ([ConanFileManager fileExistsAtPath:downloadFilePath]) {
         downloadFileBlock(downloadFilePath);
     }else{
-        [self GetDownloadFileWithURL:ConanAfnRequestMethodTypeGET Url:url Params:@{@"MD5":fileName} SaveFileName:fileName SaveFileCtype:ctype SaveFileType:type SaveFilePath:filePathType Progress:^(int64_t bytesRead, int64_t totalBytesRead, int64_t totalBytesExpectedToRead) {
+        [self GetDownloadFileWithURL:ConanAfnRequestMethodTypeGET Url:url Params:@{@"MD5":fileName} SaveFileName:fileName SaveFileType:type SaveFilePath:filePathType Progress:^(int64_t bytesRead, int64_t totalBytesRead, int64_t totalBytesExpectedToRead) {
             
         } SuccessBlock:^(id returnData, NSString *filePath) {
             if (downloadFileBlock) {

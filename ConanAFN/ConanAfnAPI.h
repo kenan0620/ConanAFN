@@ -57,7 +57,6 @@
                                         Url:(NSString *)url
                                      Params:(NSDictionary *)senDic
                                SaveFileName:(NSString *)fileName
-                              SaveFileCtype:(NSString *)ctype
                                SaveFileType:(NSString *)type
                                SaveFilePath:(ConanCacheFilePathType )filePathType
                                    Progress:(ConanDownloadProgress )progressBlock
@@ -77,7 +76,6 @@
     @param downloadFileBlock 资源下载路径的回调
  */
 + (void)DownloadFileWithMd5:(NSString *)fileName
-                    SaveFileCtype:(NSString *)ctype
                      SaveFileType:(NSString *)type
                SaveFilePath:(ConanCacheFilePathType )filePathType
                DownloadFileBlock:(ConanResponseDownloadFile )downloadFileBlock;

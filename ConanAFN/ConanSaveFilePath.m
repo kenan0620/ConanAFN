@@ -13,7 +13,6 @@
 +(NSString *)ConanConanSaveFilePath:(ConanCacheFilePathType )filePathType
                            FileType:(NSString *)type
                            FileName:(NSString *)fileName
-                          FileCtype:(NSString *)cType
 {
 
     NSString *path = nil;
@@ -36,26 +35,26 @@
     switch (filePathType) {
         case ConanCacheFilePathTypeDocuments:
           
-            path = [[SavedocPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",type]] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.%@",fileName,cType]];
+            path = [[SavedocPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",type]] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",fileName]];
             break;
             
         case ConanCacheFilePathTypeLibrary:
-            path = [[SaveLibraryPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",type]] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.%@",fileName,cType]];
+            path = [[SaveLibraryPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",type]] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",fileName]];
             break;
             
         case ConanCacheFilePathTypeCaches:
-            path = [[SaveCachePaths stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",type]] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.%@",fileName,cType]];
+            path = [[SaveCachePaths stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",type]] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",fileName]];
             break;
             
         case ConanCacheFilePathTypeTemp:
-            path = [[SaveTempPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",type]] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.%@",fileName,cType]];
+            path = [[SaveTempPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",type]] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",fileName]];
             break;
         case ConanCacheFilePathTypeHome:
-            path = [[SaveHomePath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",type]] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.%@",fileName,cType]];
+           path = [[SaveHomePath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",type]] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",fileName]];
             break;
             
         default:
-            path = [[SaveTempPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",type]] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.%@",fileName,cType]];
+            path = [[SaveTempPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",type]] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",fileName]];
             break;
     }
 

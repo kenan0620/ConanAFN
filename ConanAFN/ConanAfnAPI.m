@@ -54,7 +54,6 @@ static NSString *baseUrl = nil;
                                         Url:(NSString *)url
                                      Params:(NSDictionary *)senDic
                                SaveFileName:(NSString *)fileName
-                              SaveFileCtype:(NSString *)ctype
                                SaveFileType:(NSString *)type
                                SaveFilePath:(ConanCacheFilePathType )filePathType
                                    Progress:(ConanDownloadProgress )progressBlock
@@ -65,7 +64,7 @@ static NSString *baseUrl = nil;
 {
     ConanURLSessionTask *sessionTask = nil;
     
-   sessionTask = [[ConanAfnManager sharedInstance] DownloadFileWithURL:requestType Url:[self setNetUrl:url] Params:senDic SaveFileName:fileName SaveFileCtype:ctype SaveFileType:type SaveFilePath:filePathType Progress:^(int64_t bytesRead, int64_t totalBytesRead, int64_t totalBytesExpectedToRead) {
+   sessionTask = [[ConanAfnManager sharedInstance] DownloadFileWithURL:requestType Url:[self setNetUrl:url] Params:senDic SaveFileName:fileName SaveFileType:type SaveFilePath:filePathType Progress:^(int64_t bytesRead, int64_t totalBytesRead, int64_t totalBytesExpectedToRead) {
        if(progressBlock)
        {
            progressBlock(bytesRead,totalBytesRead,totalBytesExpectedToRead);
@@ -88,12 +87,11 @@ static NSString *baseUrl = nil;
 }
 
 + (void)DownloadFileWithMd5:(NSString *)fileName
-              SaveFileCtype:(NSString *)ctype
                SaveFileType:(NSString *)type
                SaveFilePath:(ConanCacheFilePathType )filePathType
           DownloadFileBlock:(ConanResponseDownloadFile )downloadFileBlock{
     
-    [[ConanAfnManager sharedInstance]DownloadFileWithMd5:[self setNetUrl:@"Resource/DownloadResource"] FileName:fileName SaveFileCtype:ctype SaveFileType:type SaveFilePath:filePathType DownloadFileBlock:^(NSString *filePath) {
+    [[ConanAfnManager sharedInstance]DownloadFileWithMd5:[self setNetUrl:@"Resource/DownloadResource"] FileName:fileName SaveFileType:type SaveFilePath:filePathType DownloadFileBlock:^(NSString *filePath) {
         if (downloadFileBlock) {
             downloadFileBlock(filePath);
         }

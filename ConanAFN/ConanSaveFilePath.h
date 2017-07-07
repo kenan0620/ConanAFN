@@ -14,13 +14,10 @@
  *@param filePathType 文件位置的类型
  *@param type 文件类型
  *@param fileName 文件名
- *@param cType 文件后缀
  *@return path文件位置
  */
 +(NSString *)ConanConanSaveFilePath:(ConanCacheFilePathType )filePathType
                            FileType:(NSString *)type
-                           FileName:(NSString *)fileName
-                          FileCtype:(NSString *)cType;
-
+                           FileName:(NSString *)fileName;
 
 @end
