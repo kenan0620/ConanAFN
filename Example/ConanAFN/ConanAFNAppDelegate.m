@@ -8,14 +8,12 @@
 
 #import "ConanAFNAppDelegate.h"
 
-#import <ConanAFN/ConanAfnAPI.h>
 @implementation ConanAFNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
 
-     [ConanAfnAPI ConfigConanAfnBaseUrl:@"http://tx.tunnel.qydev.com/api/"];
     
     return YES;
 }
