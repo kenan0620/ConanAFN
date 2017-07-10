@@ -36,6 +36,14 @@
               ShowHUB:(ConanShowHUDType)showHUB
           ShowMessage:(NSString *)message;
 
+/**
+ 图片文件上传
+ 
+ @param uploadImageList 图片数组（UIImage）
+ @param showMB 是否显示提示
+ */
++ (void)UploadPhoto:(NSArray *)uploadImageList showUploadResult:(BOOL)showMB;
+
 /*
  *下载文件，进行本地资源保存(保存成功后为path为：type/fileName.ctype)
  *
@@ -43,7 +51,6 @@
  *@param url 请求地址
  *@param senDic 请求参数
  *@param fileName 保存的文件名
- *@param ctype 保存的文件扩展名(后缀名)
  *@param type 保存的文件类型(图片png、视频mp4、音频mp3)(尽量英文命名)
  *@param filePathType 保存的文件位置
  *@param progressBlock 请求下载进度的回调
@@ -67,10 +74,9 @@
 
 /**
  
- 下载文件，进行本地资源保存(保存成功后为path为：type/fileName.ctype)
+ 下载文件，进行本地资源保存(保存成功后为path为：type/fileName)
  
     @param fileName 保存的文件名
-    @param ctype 保存的文件扩展名(后缀名)
     @param type 保存的文件类型(图片png、视频mp4、音频mp3)(尽量英文命名)
     @param filePathType 保存的文件位置
     @param downloadFileBlock 资源下载路径的回调

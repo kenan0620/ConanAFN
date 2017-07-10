@@ -40,25 +40,12 @@
           ShowMessage:(NSString *)message;
 
 /**
- *ConanAfn~~资源上传(图片、视频、音频),通过Block回调结果
- *
- * @param requestType 请求类型
- * @param url 请求地址
- * @param filePath 文件真实地址
- * @param upLProgress 上传进度
- * @param successBlock 请求结果返回成功的回调
- * @param failBlock 请求结果返回失败的回调
- * @param showHUB 请求方式是否显示加载视图
- * @param message 在加载视图上显示的提示信息
+ 图片文件上传
+ @param url 请求地址
+ @param uploadImageList 图片数组（UIImage）
+ @param showMB 是否显示提示
  */
--(ConanURLSessionTask *)UpLoadFileWithURL:(ConanAfnRequestMethodType )requestType
-                                      Url:(NSString *)url
-                                 FilePath:(NSString *)filePath
-                           UploadProgress:(ConanUploadProgress *)upLProgress
-                             SuccessBlock:(ConanResponseSuccess )successBlock
-                             FailureBlock:(ConanResponseFail )failBlock
-                                  ShowHUB:(ConanShowHUDType)showHUB
-                              ShowMessage:(NSString *)message;
+- (void)UploadPhotoURL:(NSString *)url ImageList:(NSArray *)uploadImageList showUploadResult:(BOOL)show;
 
 /*
  *下载文件，进行本地资源保存(保存成功后为path为：type/fileName.ctype)

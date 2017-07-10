@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27AF88641F13B0DE00DC1E48 /* 96681.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27AF88631F13B0DE00DC1E48 /* 96681.jpg */; };
+		27AF88661F13B0E200DC1E48 /* 829919.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AF88651F13B0E200DC1E48 /* 829919.png */; };
+		27AF88741F13C4FE00DC1E48 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AF88711F13C4FE00DC1E48 /* 1.png */; };
+		27AF88751F13C4FE00DC1E48 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AF88721F13C4FE00DC1E48 /* 2.png */; };
+		27AF88761F13C4FE00DC1E48 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AF88731F13C4FE00DC1E48 /* 3.png */; };
+		27AF88781F13CF1600DC1E48 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AF88771F13CF1600DC1E48 /* 4.png */; };
+		27C866CB1F138C910095A3B0 /* de1101e93901213ff6a3a62954e736d12e2e95b0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27C866CA1F138C910095A3B0 /* de1101e93901213ff6a3a62954e736d12e2e95b0.jpg */; };
 		3E5ABE4B51AAE78A17BB7117 /* Pods_ConanAFN_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D124A7B8C164CBE72D6C9A18 /* Pods_ConanAFN_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -44,6 +51,13 @@
 		274B7FCE1E8E23BC007AB786 /* RealReachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealReachability.framework; path = "../../../Library/Developer/Xcode/DerivedData/ConanAFN-gdtlwyopwmdbdzgnnwbtpfnowqaa/Build/Products/Debug-iphoneos/RealReachability/RealReachability.framework"; sourceTree = "<group>"; };
 		274B7FD01E8E23C3007AB786 /* ConanAFN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConanAFN.framework; path = "../../../Library/Developer/Xcode/DerivedData/ConanAFN-gdtlwyopwmdbdzgnnwbtpfnowqaa/Build/Products/Debug-iphoneos/ConanAFN/ConanAFN.framework"; sourceTree = "<group>"; };
 		274B7FD21E8E23C7007AB786 /* Pods_ConanAFN_Tests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ConanAFN_Tests.framework; path = "Pods/../build/Debug-iphoneos/Pods_ConanAFN_Tests.framework"; sourceTree = "<group>"; };
+		27AF88631F13B0DE00DC1E48 /* 96681.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 96681.jpg; sourceTree = "<group>"; };
+		27AF88651F13B0E200DC1E48 /* 829919.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 829919.png; sourceTree = "<group>"; };
+		27AF88711F13C4FE00DC1E48 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		27AF88721F13C4FE00DC1E48 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		27AF88731F13C4FE00DC1E48 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		27AF88771F13CF1600DC1E48 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		27C866CA1F138C910095A3B0 /* de1101e93901213ff6a3a62954e736d12e2e95b0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = de1101e93901213ff6a3a62954e736d12e2e95b0.jpg; sourceTree = "<group>"; };
 		3DC55E79421FC0DFAA20118E /* Pods-ConanAFN_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConanAFN_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConanAFN_Example/Pods-ConanAFN_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ConanAFN_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConanAFN_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -145,8 +159,15 @@
 				6003F59C195388D20070C39A /* ConanAFNAppDelegate.h */,
 				6003F59D195388D20070C39A /* ConanAFNAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				27AF88631F13B0DE00DC1E48 /* 96681.jpg */,
 				6003F5A5195388D20070C39A /* ConanAFNViewController.h */,
+				27AF88651F13B0E200DC1E48 /* 829919.png */,
+				27AF88711F13C4FE00DC1E48 /* 1.png */,
+				27AF88721F13C4FE00DC1E48 /* 2.png */,
+				27AF88731F13C4FE00DC1E48 /* 3.png */,
+				27AF88771F13CF1600DC1E48 /* 4.png */,
 				6003F5A6195388D20070C39A /* ConanAFNViewController.m */,
+				27C866CA1F138C910095A3B0 /* de1101e93901213ff6a3a62954e736d12e2e95b0.jpg */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -292,10 +313,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AF88781F13CF1600DC1E48 /* 4.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				27AF88741F13C4FE00DC1E48 /* 1.png in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				27C866CB1F138C910095A3B0 /* de1101e93901213ff6a3a62954e736d12e2e95b0.jpg in Resources */,
+				27AF88761F13C4FE00DC1E48 /* 3.png in Resources */,
+				27AF88641F13B0DE00DC1E48 /* 96681.jpg in Resources */,
+				27AF88751F13C4FE00DC1E48 /* 2.png in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				27AF88661F13B0E200DC1E48 /* 829919.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

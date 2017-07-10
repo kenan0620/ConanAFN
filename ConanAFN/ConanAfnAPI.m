@@ -50,6 +50,12 @@ static NSString *baseUrl = nil;
     } ShowHUB:showHUB ShowMessage:message];
 }
 
++ (void)UploadPhoto:(NSArray *)uploadImageList showUploadResult:(BOOL)showMB{
+
+    [[ConanAfnManager sharedInstance]UploadPhotoURL:[self setNetUrl:@"Resource/UploadResource"] ImageList:uploadImageList showUploadResult:showMB];
+    
+}
+
 +(ConanURLSessionTask *)DownloadFileWithURL:(ConanAfnRequestMethodType )requestType
                                         Url:(NSString *)url
                                      Params:(NSDictionary *)senDic

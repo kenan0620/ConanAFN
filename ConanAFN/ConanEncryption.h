@@ -24,6 +24,13 @@
 + (NSString *)ConanSha1EncryptionStr:(NSString *)string;
 
 /**
+ 图片MD5加密
+ 
+ @param string 需要加密的UIImage的MD5
+ */
++ (NSString *)ConanMd5EncryptionImage:(UIImage *)image;
+
+/**
  文件Md5加密
  
  @param filePath 需要加密的文件路径

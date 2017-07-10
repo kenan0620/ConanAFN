@@ -12,8 +12,10 @@
 #import "ConanSaveFilePath.h"
 #import "ConanEncryption.h"
 #import "ConanMacroDefine.h"
+#import "XYXMBProgressHUD+Event.h"
 static ConanAfnManager *conanAfn;
-#define ConanFileManager  [NSFileManager defaultManager]
+
+
 @implementation ConanAfnManager
 
 +(ConanAfnManager *)sharedInstance
@@ -142,72 +144,126 @@ static ConanAfnManager *conanAfn;
     [POSTsessionTask resume];
 }
 #pragma mark ============ 文件上传和下载 =================
--(ConanURLSessionTask *)UpLoadFileWithURL:(ConanAfnRequestMethodType )requestType
-                                      Url:(NSString *)url
-                                 FilePath:(NSString *)filePath
-                           UploadProgress:(ConanUploadProgress *)upLProgress
-                             SuccessBlock:(ConanResponseSuccess )successBlock
-                             FailureBlock:(ConanResponseFail )failBlock
-                                  ShowHUB:(ConanShowHUDType)showHUB
-                              ShowMessage:(NSString *)message
-{
-    switch (requestType) {
-        case ConanAfnRequestMethodTypeGET:
-            return nil;
-            break;
-            case ConanAfnRequestMethodTypePOST:
-            return [self PostUpLoadFileWithURL:ConanAfnRequestMethodTypePOST Url:url FilePath:filePath UploadProgress:upLProgress SuccessBlock:^(id returnData) {
-                if (successBlock) {
-                    successBlock(returnData);
-                }
-            } FailureBlock:^(NSError *error) {
-                if (failBlock) {
-                    failBlock(error);
-                }
-            } ShowHUB:showHUB ShowMessage:message];
-            break;
-            
-        default:
-            return nil;
-            break;
-    }
-}
-
--(ConanURLSessionTask *)PostUpLoadFileWithURL:(ConanAfnRequestMethodType )requestType
-                                      Url:(NSString *)url
-                                 FilePath:(NSString *)filePath
-                           UploadProgress:(ConanUploadProgress *)upLProgress
-                             SuccessBlock:(ConanResponseSuccess )successBlock
-                             FailureBlock:(ConanResponseFail )failBlock
-                                  ShowHUB:(ConanShowHUDType)showHUB
-                              ShowMessage:(NSString *)message
-{
-    NSURL *Url=[NSURL URLWithString:[NSString stringWithFormat:@"%@",url]];
-
-    NSURLRequest *requestUrl = [NSURLRequest requestWithURL:Url];
+- (void)UploadPhotoURL:(NSString *)url ImageList:(NSArray *)uploadImageList showUploadResult:(BOOL)show{
     
-    NSURL *filePathUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@",filePath]];
-    
-    AFHTTPSessionManager *manager=[ConanAfnBase manager];
-
-    ConanURLSessionTask *conanSessionTask = nil;
-    
-    [manager uploadTaskWithRequest:requestUrl fromFile:filePathUrl progress:^(NSProgress * _Nonnull uploadProgress) {
-        
-    } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-        
-        [[ConanAfnBase AllTasks] removeObject:conanSessionTask];
-        [ConanAfnBase SuccessResponse:responseObject Callback:successBlock];
-        
-    }];
-    
-    if (conanSessionTask) {
-        [[ConanAfnBase AllTasks] addObject:conanSessionTask];
+    if (uploadImageList.count<1) {
+        [XYXMBProgressHUD showSuccess:[NSString stringWithFormat:@"请至少选择一张图片再进行上传!"]];
+        return;
     }
     
-    return conanSessionTask;
+    // 准备保存结果的数组，元素个数与上传的图片个数相同，先用 NSNull 占位
+    NSMutableArray* result = [NSMutableArray array];
+    
+    for (int i =0; i<uploadImageList.count; i++) {
+        [result addObject:[NSNull null]];
+    }
+    
+    dispatch_group_t group = dispatch_group_create();
+    
+    for (NSInteger i = 0; i < uploadImageList.count; i++) {
+        
+        dispatch_group_enter(group);
+        
+        NSURLSessionUploadTask* uploadTask = [self uploadTaskWithImageUrl:url Image:uploadImageList[i] completion:^(NSURLResponse *response, NSDictionary* responseObject, NSError *error) {
+            ConanLog(@"第%ld张开始上传了~~",(long)i + 1);
+            if (error) {
+                ConanLog(@"第 %d 张图片上传失败: %@", (int)i + 1, error);
+                dispatch_group_leave(group);
+            } else {
+                ConanLog(@"第 %d 张图片上传成功: %@", (int)i + 1, responseObject);
+                @synchronized (result) { // NSMutableArray 是线程不安全的，所以加个同步锁
+                    result[i] = responseObject;
+                }
+                dispatch_group_leave(group);
+            }
+        }];
+        [uploadTask resume];
+    }
+    
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        if (show) {
+            [XYXMBProgressHUD showSuccess:[NSString stringWithFormat:@"图片上传完成!"]];
+        }
+        
+        for (int i = 0; i <result.count; i++) {
+            id response = result[i];
+            ConanLog(@"%@", response);
+        }
+        
+    });
 }
 
+- (NSURLSessionUploadTask*)uploadTaskWithImageUrl:(NSString *)url Image:(UIImage*)image completion:(void (^)(NSURLResponse *response, id responseObject, NSError *error))completionBlock {
+    // 构造 NSURLRequest
+    NSData *imageData = nil;
+    if (UIImagePNGRepresentation(image) == nil) {
+        
+        imageData = UIImageJPEGRepresentation(image, 1.0);
+        
+    } else {
+        
+        imageData = UIImagePNGRepresentation(image);
+    }
+    
+    NSString *fileName = [ConanEncryption ConanMd5EncryptionStr:[NSString stringWithFormat:@"%ld",(long)FileArc4]];
+    
+    NSString *tmpFilePath =[NSString stringWithFormat:@"%@",TempFilePath(fileName)];
+    
+    NSFileManager *fileMana = [NSFileManager defaultManager];
+    
+    
+    if ([fileMana fileExistsAtPath:tmpFilePath]) {
+        [fileMana createDirectoryAtPath:tmpFilePath withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    
+    BOOL write =[imageData writeToFile:tmpFilePath atomically:YES];
+    
+    if (!write) {
+        BOOL writeAgain = [imageData writeToFile:tmpFilePath atomically:YES];
+        if (!writeAgain) {
+            [imageData writeToFile:tmpFilePath atomically:YES];
+        }
+    }
+    NSString *storageFilePath = SaveFilePath([ConanEncryption ConanMd5HashOfFileAtPath:tmpFilePath]);
+    
+    if (![fileMana fileExistsAtPath:storageFilePath]) {
+        [fileMana createDirectoryAtPath:[storageFilePath stringByDeletingLastPathComponent] withIntermediateDirectories:YES attributes:nil error:nil];                                                   NSError *error;
+        
+        BOOL moveFile = [fileMana moveItemAtPath:tmpFilePath toPath:storageFilePath error:&error];
+        
+        if (!moveFile) {
+            BOOL moveFileAgain = [fileMana moveItemAtPath:tmpFilePath toPath:storageFilePath error:&error];
+            if (!moveFileAgain) {
+                [fileMana moveItemAtPath:tmpFilePath toPath:storageFilePath error:&error];
+            }
+        }
+    }else{
+        ConanLog(@"文件已存在，秒移成功");
+    }
+    
+    NSDictionary *sendDic = [NSDictionary dictionaryWithObjectsAndKeys:
+                             @"", @"file",
+                             [ConanEncryption ConanMd5HashOfFileAtPath:storageFilePath], @"MD5",
+                             [ConanEncryption ConanSha1HashOfFileAtPath:storageFilePath], @"SHA1",
+                             @"1", @"Type",
+                             @"png", @"ExtensionName",
+                             @"",@"PlayTime",
+                             nil];
+    NSError* error = NULL;
+    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:url parameters:sendDic constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        [formData appendPartWithFileData:imageData name:@"file" fileName:[ConanEncryption ConanMd5HashOfFileAtPath:storageFilePath] mimeType:@"image/jpg/png/jpeg"];
+        
+    } error:&error];
+    
+    // 可在此处配置验证信息
+    //    [request setValue:@"" forHTTPHeaderField:@""];
+    // 将 NSURLRequest 与 completionBlock 包装为 NSURLSessionUploadTask
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    NSURLSessionUploadTask *uploadTask = [manager uploadTaskWithStreamedRequest:request progress:^(NSProgress * _Nonnull uploadProgress) {
+    } completionHandler:completionBlock];
+    
+    return uploadTask;
+}
 
 
 -(ConanURLSessionTask *)DownloadFileWithURL:(ConanAfnRequestMethodType )requestType

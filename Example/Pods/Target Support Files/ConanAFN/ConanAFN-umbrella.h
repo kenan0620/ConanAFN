@@ -19,6 +19,8 @@
 #import "ConanMacroDefine.h"
 #import "ConanNetStatus.h"
 #import "ConanSaveFilePath.h"
+#import "XYXMBProgressHUD+Event.h"
+#import "XYXMBProgressHUD.h"
 
 FOUNDATION_EXPORT double ConanAFNVersionNumber;
 FOUNDATION_EXPORT const unsigned char ConanAFNVersionString[];

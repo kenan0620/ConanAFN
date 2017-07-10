@@ -36,6 +36,11 @@ context.updateFunction    = (FileHashUpdateFunction)&CC_##hashAlgorithmName##_Up
 context.finalFunction     = (FileHashFinalFunction)&CC_##hashAlgorithmName##_Final;     \
 context.digestLength      = CC_##hashAlgorithmName##_DIGEST_LENGTH;                     \
 context.hashObjectPointer = (uint8_t **)&hashObjectFor##hashAlgorithmName
+
+
+#define TempFilePath(fileName) [[NSHomeDirectory() stringByAppendingPathComponent:@"tmp"]stringByAppendingPathComponent:fileName]
+
+#define FileArc4 1000000000000+arc4random() % 9999999999999
 @implementation ConanEncryption
 
 + (NSString *) ConanMd5EncryptionStr:(NSString *)string
@@ -74,7 +79,39 @@ context.hashObjectPointer = (uint8_t **)&hashObjectFor##hashAlgorithmName
     return output;
 }
 
-
++ (NSString *)ConanMd5EncryptionImage:(UIImage *)image{
+    NSData *imageData = nil;
+    if (UIImagePNGRepresentation(image) == nil) {
+        
+        imageData = UIImageJPEGRepresentation(image, 1.0);
+        
+    } else {
+        
+        imageData = UIImagePNGRepresentation(image);
+    }
+    
+    NSString *fileName = [ConanEncryption ConanMd5EncryptionStr:[NSString stringWithFormat:@"%ld",(long)FileArc4]];
+    
+    NSString *tmpFilePath =[NSString stringWithFormat:@"%@",TempFilePath(fileName)];
+    NSLog(@"tmpFilePath:\n%@",tmpFilePath);
+    NSFileManager *fileMana = [NSFileManager defaultManager];
+    
+    
+    if ([fileMana fileExistsAtPath:tmpFilePath]) {
+        [fileMana createDirectoryAtPath:tmpFilePath withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    
+    BOOL write =[imageData writeToFile:tmpFilePath atomically:YES];
+    
+    if (!write) {
+        BOOL writeAgain = [imageData writeToFile:tmpFilePath atomically:YES];
+        if (!writeAgain) {
+            [imageData writeToFile:tmpFilePath atomically:YES];
+        }
+    }
+    
+    return [ConanEncryption ConanMd5HashOfFileAtPath:tmpFilePath];
+}
 
 + (NSString *)hashOfFileAtPath:(NSString *)filePath withComputationContext:(FileHashComputationContext *)context {
     NSFileManager *fileManager = [NSFileManager defaultManager];
