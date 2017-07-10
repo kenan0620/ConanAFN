@@ -40,7 +40,6 @@ context.hashObjectPointer = (uint8_t **)&hashObjectFor##hashAlgorithmName
 
 #define TempFilePath(fileName) [[NSHomeDirectory() stringByAppendingPathComponent:@"tmp"]stringByAppendingPathComponent:fileName]
 
-#define FileArc4 1000000000000+arc4random() % 9999999999999
 @implementation ConanEncryption
 
 + (NSString *) ConanMd5EncryptionStr:(NSString *)string
@@ -90,7 +89,7 @@ context.hashObjectPointer = (uint8_t **)&hashObjectFor##hashAlgorithmName
         imageData = UIImagePNGRepresentation(image);
     }
     
-    NSString *fileName = [ConanEncryption ConanMd5EncryptionStr:[NSString stringWithFormat:@"%ld",(long)FileArc4]];
+    NSString *fileName = [ConanEncryption ConanMd5EncryptionStr:[NSString stringWithFormat:@"%ld",arc4random() % 9999999999999]];
     
     NSString *tmpFilePath =[NSString stringWithFormat:@"%@",TempFilePath(fileName)];
     NSLog(@"tmpFilePath:\n%@",tmpFilePath);

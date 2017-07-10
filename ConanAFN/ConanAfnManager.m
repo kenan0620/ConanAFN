@@ -185,10 +185,10 @@ static ConanAfnManager *conanAfn;
             [XYXMBProgressHUD showSuccess:[NSString stringWithFormat:@"图片上传完成!"]];
         }
         
-        for (int i = 0; i <result.count; i++) {
-            id response = result[i];
-            ConanLog(@"%@", response);
-        }
+//        for (int i = 0; i <result.count; i++) {
+//            id responseResult = result[i];
+//            ConanLog(@"%@", responseResult);
+//        }
         
     });
 }
@@ -205,7 +205,7 @@ static ConanAfnManager *conanAfn;
         imageData = UIImagePNGRepresentation(image);
     }
     
-    NSString *fileName = [ConanEncryption ConanMd5EncryptionStr:[NSString stringWithFormat:@"%ld",(long)FileArc4]];
+    NSString *fileName = [ConanEncryption ConanMd5EncryptionStr:[NSString stringWithFormat:@"%ld",arc4random() % 9999999999999]];
     
     NSString *tmpFilePath =[NSString stringWithFormat:@"%@",TempFilePath(fileName)];
     

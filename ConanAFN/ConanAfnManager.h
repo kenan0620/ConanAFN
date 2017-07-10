@@ -43,7 +43,7 @@
  图片文件上传
  @param url 请求地址
  @param uploadImageList 图片数组（UIImage）
- @param showMB 是否显示提示
+ @param show 是否显示提示
  */
 - (void)UploadPhotoURL:(NSString *)url ImageList:(NSArray *)uploadImageList showUploadResult:(BOOL)show;
 
@@ -54,7 +54,6 @@
  *@param url 请求地址
  *@param senDic 请求参数
  *@param fileName 保存的文件名
- *@param ctype 保存的文件扩展名(后缀名)
  *@param filePathType 保存的文件位置
  *@param progressBlock 请求下载进度的回调
  *@param successBlock 请求结果返回成功的回调

@@ -26,7 +26,7 @@
 /**
  图片MD5加密
  
- @param string 需要加密的UIImage的MD5
+ @param image 需要加密的UIImage的MD5
  */
 + (NSString *)ConanMd5EncryptionImage:(UIImage *)image;
 

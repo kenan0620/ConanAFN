@@ -26,6 +26,5 @@
 
 #define TempFilePath(fileName) [[NSHomeDirectory() stringByAppendingPathComponent:@"tmp"]stringByAppendingPathComponent:fileName]
 
-#define FileArc4 1000000000000+arc4random() % 9999999999999
 
 #endif /* ConanMacroDefine_h */

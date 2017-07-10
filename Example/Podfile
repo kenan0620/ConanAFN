@@ -1,6 +1,9 @@
 use_frameworks!
 
 target 'ConanAFN_Example' do
+    
+inhibit_all_warnings!
+
   pod 'ConanAFN', :path => '../'
 
   target 'ConanAFN_Tests' do
