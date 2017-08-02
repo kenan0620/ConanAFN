@@ -45,7 +45,9 @@ typedef NS_ENUM(NSUInteger, AFNConanResponseDataType) {
     AFNConanResponseDataTypeAFCompound = 5,//组合
 };
 
-#pragma mark =============文件上传的枚举类型=============
+/**
+ 文件上传的枚举类型
+ */
 typedef NS_ENUM(NSInteger, AFNConanUploadFileType) {
     AFNConanUploadFileTypeImage = 0,//图片
     AFNConanUploadFileTypeMp3,//音频
@@ -86,7 +88,9 @@ typedef NS_ENUM(NSInteger, AFNConanUploadFileType) {
  
  */
 
-#pragma mark =============文件下载存储根目录的枚举类型=============
+/**
+ 文件下载存储根目录的枚举类型
+ */
 typedef NS_ENUM(NSInteger, AFNConanCacheFileDirectoryType)
 {
     AFNConanCacheFilePathDirectoryTypeDocuments = 0,//存储在Document目录下
@@ -94,7 +98,9 @@ typedef NS_ENUM(NSInteger, AFNConanCacheFileDirectoryType)
     AFNConanCacheFilePathDirectoryTypeCaches = 2,//存储在Caches目录下
 };
 
-#pragma mark =============文件下载存储类型的枚举类型=============
+/**
+ 文件下载存储类型的枚举类型
+ */
 typedef NS_ENUM(NSInteger, AFNConanCacheFileType)
 {
     AFNConanCacheFileTypePictures = 0,//Pictures目录下

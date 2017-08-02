@@ -11,6 +11,7 @@
 #endif
 
 #import "AFNConanAPI.h"
+#import "AFNConanEncryption.h"
 #import "AFNConanEnumType.h"
 #import "AFNConanNetworkManager.h"
 

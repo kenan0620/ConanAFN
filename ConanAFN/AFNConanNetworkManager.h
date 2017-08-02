@@ -22,14 +22,13 @@ typedef NS_ENUM(NSInteger , AFNConanNetWorkType) {
 +(AFNConanNetworkManager *)sharedInstance;
 
 /**
- *  网络实时监听
+ 网络实时监听
  */
 - (void)listening;
 
 /**
- *  判断当前网络状态
- *
- *  @return 网络状态
+ 判断当前网络状态
+ @return 网络状态
  */
 + (AFNConanNetWorkType )currentReachabilityStatus;
 

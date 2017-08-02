@@ -1,5 +1,5 @@
 PODS:
-  - ConanAFN (1.1.0)
+  - ConanAFN (1.1.1)
 
 DEPENDENCIES:
   - ConanAFN (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ConanAFN: d9aba482a30b9926fa04fa1b6d1d2b0a33541b9a
+  ConanAFN: 7c2dbda4cedcd91d7e7eadc1b34948de6e44cd2c
 
 PODFILE CHECKSUM: 8442aca303fb490234cc84f150e2d5ac11cb560d
 
