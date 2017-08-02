@@ -1,27 +1,5 @@
 PODS:
-  - AFNetworking (3.1.0):
-    - AFNetworking/NSURLSession (= 3.1.0)
-    - AFNetworking/Reachability (= 3.1.0)
-    - AFNetworking/Security (= 3.1.0)
-    - AFNetworking/Serialization (= 3.1.0)
-    - AFNetworking/UIKit (= 3.1.0)
-  - AFNetworking/NSURLSession (3.1.0):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.1.0)
-  - AFNetworking/Security (3.1.0)
-  - AFNetworking/Serialization (3.1.0)
-  - AFNetworking/UIKit (3.1.0):
-    - AFNetworking/NSURLSession
-  - ConanAFN (1.0.9):
-    - AFNetworking (~> 3.1.0)
-    - RealReachability (~> 1.1.8)
-  - RealReachability (1.1.8):
-    - RealReachability/Connection (= 1.1.8)
-    - RealReachability/Ping (= 1.1.8)
-  - RealReachability/Connection (1.1.8)
-  - RealReachability/Ping (1.1.8)
+  - ConanAFN (1.1.0)
 
 DEPENDENCIES:
   - ConanAFN (from `../`)
@@ -31,9 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  ConanAFN: dcf12dbe69b632b70068c88687a59a16718a3dba
-  RealReachability: e6c8a2bbffa316006e8c282efc1ee2567d61a920
+  ConanAFN: d9aba482a30b9926fa04fa1b6d1d2b0a33541b9a
 
 PODFILE CHECKSUM: 8442aca303fb490234cc84f150e2d5ac11cb560d
 

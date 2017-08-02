@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConanAFN'
-  s.version          = '1.0.9'
+  s.version          = '1.1.0'
   s.summary          = '网络框架库 ConanAFN.'
 
 
@@ -16,9 +16,6 @@ ConanAFN。对AFN进行二次封装，逐步增加新的方法，不断的进行
 
 s.ios.deployment_target = '8.0'
 s.requires_arc = true
-s.source_files = 'ConanAFN/*.{h,m}'
-
-s.dependency 'AFNetworking', '~> 3.1.0'
-s.dependency 'RealReachability', '~> 1.1.8'
+s.source_files = 'ConanAFN/*.{h,m,a}'
 
 end

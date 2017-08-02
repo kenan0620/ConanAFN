@@ -76,3 +76,5 @@ ConanAFN is available under the MIT license. See the LICENSE file for more info.
 ~~> 1.0.8 ConanAFN 修改资源存储方式
 
 ~~> 1.0.9 ConanAFN 修改资源上传方式
+
+~~> 1.1.0 ConanAFN 修改框架结构

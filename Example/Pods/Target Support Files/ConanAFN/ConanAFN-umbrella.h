@@ -10,17 +10,9 @@
 #endif
 #endif
 
-#import "ConanAfnAPI.h"
-#import "ConanAfnBase.h"
-#import "ConanAfnBlock.h"
-#import "ConanAfnEnumType.h"
-#import "ConanAfnManager.h"
-#import "ConanEncryption.h"
-#import "ConanMacroDefine.h"
-#import "ConanNetStatus.h"
-#import "ConanSaveFilePath.h"
-#import "XYXMBProgressHUD+Event.h"
-#import "XYXMBProgressHUD.h"
+#import "AFNConanAPI.h"
+#import "AFNConanEnumType.h"
+#import "AFNConanNetworkManager.h"
 
 FOUNDATION_EXPORT double ConanAFNVersionNumber;
 FOUNDATION_EXPORT const unsigned char ConanAFNVersionString[];
