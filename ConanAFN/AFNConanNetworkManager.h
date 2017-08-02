@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <RealReachability/RealReachability.h>
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger , AFNConanNetWorkType) {
@@ -28,7 +29,7 @@ typedef NS_ENUM(NSInteger , AFNConanNetWorkType) {
 
 /**
  判断当前网络状态
- @return 网络状态
+ @return 当前网络状态
  */
 + (AFNConanNetWorkType )currentReachabilityStatus;
 

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'FBE4418439AB6F10897179B4F7A9B05E'
+               BlueprintIdentifier = 'B94AADD7E5132BA8E2260BD634A9783B'
                BlueprintName = 'Pods-ConanAFN_Example'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-ConanAFN_Example.framework'>

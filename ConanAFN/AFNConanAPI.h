@@ -41,7 +41,7 @@
 
 @property (nonatomic, weak) id<AFNConanAPIResponseDelegate> delegate;
 
-#pragma mark -----一道华丽的风格线-----
+#pragma mark -----一道华丽的分割线-----
 
 + (AFNConanAPI *)ShareInstance;
 
