@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - ConanAFN (1.1.2):
+  - ConanAFN (1.1.3):
     - AFNetworking (~> 3.1.0)
     - RealReachability (~> 1.1.9)
   - RealReachability (1.1.9):
@@ -32,7 +32,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  ConanAFN: 539c01b8f799078e53acdbb59140001726682dfd
+  ConanAFN: 36a9c235702c56cb13bd2a7e31a9ad7b79545a13
   RealReachability: a8c483900986a0f3305733961effbfbb00637a02
 
 PODFILE CHECKSUM: 8442aca303fb490234cc84f150e2d5ac11cb560d

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "AFNConanEnumType.h"
-
+#import "AFNConanBlockType.h"
 @protocol AFNConanAPIResponseDelegate <NSObject>
 
 @optional
@@ -78,20 +78,22 @@
                       ShowHUB:(BOOL)show;
 
 /**
- 
- AFN下载文件
+ AFN资源下载
  
  @param apiUrl api地址
- @param apiKey 获取返回数据的唯一识别
- @param downloadList 下载的文件标示码集合
+ @param downloadFile 下载的文件标示码
  @param requestType 请求方式
  @param directoryType 保存的文件目录（Document、Library、Cache）
  @param fileType 保存的文件类型(图片、视频、音频)
+ @param successBlock 下载成功的回调
+ @param failureBlock 下载失败的回调
  */
+
 - (void)AFNConanDownloadFileWithUrl:(NSString *)apiUrl
-                             APIKey:(NSString *)apiKey
-                           FileList:(NSArray *)downloadList
+                            FileMD5:(NSString *)downloadFile
                         RequestTyep:(AFNConanRequestMethodType)requestType
              CacheFileDirectoryType:(AFNConanCacheFileDirectoryType )directoryType
-                      CacheFileType:(AFNConanCacheFileType )fileType;
+                      CacheFileType:(AFNConanCacheFileType )fileType
+               ResponseSuccessBlock:(AFNConanResponseDownloadFileSuccess)successBlock
+               ResponseFailureBlock:(AFNConanResponseFailure)failureBlock;
 @end
