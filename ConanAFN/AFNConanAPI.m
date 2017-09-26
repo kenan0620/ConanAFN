@@ -77,6 +77,7 @@
     if (_url) {
         apiUrl = [NSString stringWithFormat:@"%@%@",_url,apiUrl];
     }
+    
     [manager AFNConanDownloadFileWithUrl:apiUrl FileList:downloadList RequestTyep:requestType CacheFileDirectoryType:directoryType CacheFileType:fileType ResponseSuccessBlock:^(NSMutableDictionary *downloadFilePathManager) {
         if ([self.delegate respondsToSelector:@selector(ResponseSuccessData:APIKey:)]) {
             [self.delegate ResponseSuccessData:downloadFilePathManager APIKey:apiKey];
@@ -99,17 +100,23 @@
     if (_url) {
         apiUrl = [NSString stringWithFormat:@"%@%@",_url,apiUrl];
     }
-    [manager AFNConanDownloadFileWithUrl:apiUrl FileList:@[downloadFile] RequestTyep:requestType CacheFileDirectoryType:directoryType CacheFileType:fileType ResponseSuccessBlock:^(NSMutableDictionary *downloadFilePathManager) {
-        {
-            if (successBlock) {
-                successBlock(downloadFilePathManager);
+    if (!downloadFile) {
+        NSLog(@"downloadFile");
+        NSMutableDictionary *downloadFilePathManager = [NSMutableDictionary dictionary];
+        successBlock(downloadFilePathManager);
+    }else{
+        [manager AFNConanDownloadFileWithUrl:apiUrl FileList:@[downloadFile] RequestTyep:requestType CacheFileDirectoryType:directoryType CacheFileType:fileType ResponseSuccessBlock:^(NSMutableDictionary *downloadFilePathManager) {
+            {
+                if (successBlock) {
+                    successBlock(downloadFilePathManager);
+                }
             }
-        }
-    }ResponseFailureBlock:^(NSError *error) {
-        if (failureBlock) {
-            failureBlock(error);
-        }
-    }];
+        }ResponseFailureBlock:^(NSError *error) {
+            if (failureBlock) {
+                failureBlock(error);
+            }
+        }];
+    }
 }
 #pragma mark -----Config Manager-----
 

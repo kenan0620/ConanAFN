@@ -446,6 +446,7 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
     label.backgroundColor = [UIColor clearColor];
     label.textColor = [UIColor whiteColor];
     label.font = self.labelFont;
+    label.numberOfLines = 0;
     label.text = self.labelText;
     [self addSubview:label];
     
