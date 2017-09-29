@@ -53,4 +53,4 @@ ConanAFN is available under the MIT license. See the LICENSE file for more info.
 
 ~~> 1.1.0 ConanAFN 修改框架结构
 
-~~> 1.1.4 ConanAFN 修复显示消息不全Bug
+~~> 1.1.5 ConanAFN 修复显示消息不全Bug

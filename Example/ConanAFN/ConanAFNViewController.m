@@ -7,9 +7,6 @@
 //
 
 #import "ConanAFNViewController.h"
-#import <ConanAFN/AFNConanMBProgressHUD+Event.h>
-#import <ConanAFN/AFNConanAPI.h>
-#import <ConanAFN/AFNConanResourcePathUrl.h>
 @interface ConanAFNViewController ()
 
 @end
@@ -57,37 +54,14 @@
     [fileHandle closeFile];
 }
 - (void)cache{
-    NSArray *arr =@[@"1",@"2",@"3"];
-    NSString *fileName = @"conan";
     
-    NSURL *tmpDirectoryUrl = [AFNConanResourcePathUrl resourceDirectory:AFNConanCacheFilePathDirectoryTypeCaches];
-    NSURL *tmpCacheFileUrl = [AFNConanResourcePathUrl resourceFile:AFNConanCacheFileTypePictures Directory:tmpDirectoryUrl];
-    NSURL *tmpFileURL = [tmpCacheFileUrl URLByAppendingPathComponent:fileName];
-    
-    BOOL write =[arr writeToFile:[tmpFileURL path] atomically:YES];
-    NSArray *arr1 =@[@"11",@"12",@"13"];
-    [arr1 writeToFile:[tmpFileURL path] atomically:YES];
-    if (!write) {
-        BOOL writeAgain = [arr writeToFile:[tmpFileURL path] atomically:YES];
-        if (!writeAgain) {
-            [arr writeToFile:[tmpFileURL path] atomically:YES];
-        }
-    }
-    
-    
-    NSLog(@"%@",tmpFileURL);
 }
 
 - (void)afn{
-    [[AFNConanAPI ShareInstance]AFNConanDownloadFileWithUrl:@"sdf" FileMD5:nil RequestTyep:AFNConanRequestMethodTypeGET CacheFileDirectoryType:AFNConanCacheFilePathDirectoryTypeDocuments CacheFileType:AFNConanCacheFileTypePictures ResponseSuccessBlock:^(NSMutableDictionary *downloadFilePathManager) {
-        NSLog(@"%@",downloadFilePathManager);
-    } ResponseFailureBlock:^(NSError *error) {
-        NSLog(@"%@",error);
-    }];
+    
 }
 
 - (void)showmessage{
-    [AFNConanMBProgressHUD showSuccess:@"Do any additional setup after loading the view, typically from a nibDo any additional setup after loading the view, typically from a nib" toView:self.view];
 }
 - (void)didReceiveMemoryWarning
 {

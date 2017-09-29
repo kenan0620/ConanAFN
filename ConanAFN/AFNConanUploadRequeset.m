@@ -7,8 +7,8 @@
 //
 
 #import "AFNConanUploadRequeset.h"
-#import "AFNConanMBProgressHUD.h"
-#import "AFNConanMBProgressHUD+Event.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+XYX.h"
 #import "AFNConanEncryption.h"
 #import "AFNConanMacroDefine.h"
 #import "AFNConanEnumType.h"
@@ -30,8 +30,7 @@
                       ShowHUB:(BOOL)show{
     
     if (uploadImageList.count<1) {
-        
-        [AFNConanMBProgressHUD show:[NSString stringWithFormat:@"请至少选择一张图片再进行上传!"] icon:@"" view:[AFNConanTheCurrentVC getCurrentVC].view];
+        [MBProgressHUD showError:[NSString stringWithFormat:@"请至少选择一张图片再进行上传!"]];
         return;
     }
     
@@ -66,7 +65,7 @@
     
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
         if (show) {
-            [AFNConanMBProgressHUD show:[NSString stringWithFormat:@"图片上传完成!"] icon:@"" view:[AFNConanTheCurrentVC getCurrentVC].view];
+            [MBProgressHUD showSuccess:[NSString stringWithFormat:@"图片上传完成!"]];
         }
 //        for (int i = 0; i <result.count; i++) {
 //            id response = result[i];

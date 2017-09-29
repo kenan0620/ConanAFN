@@ -7,7 +7,7 @@
 //
 
 #import "AFNConanNetworkManager.h"
-#import "AFNConanMBProgressHUD+Event.h"
+#import "MBProgressHUD+XYX.h"
 #import <RealReachability/LocalConnection.h>
 #import "AFNConanTheCurrentVC.h"
 @implementation AFNConanNetworkManager
@@ -91,19 +91,19 @@ static AFNConanNetworkManager *conanNetSington;
     
     switch (status) {
         case RealStatusUnknown:{
-            [AFNConanMBProgressHUD show:@"未知网络，请检查网络连接情况。" icon:nil view:[AFNConanTheCurrentVC getCurrentVC].view];
+            [MBProgressHUD showError:@"未知网络，请检查网络连接情况。"];
             [self ConanNetUnknow];
         }
             break;
         case RealStatusNotReachable:{
-            [AFNConanMBProgressHUD show:@"无网络，请检查网络连通情况。" icon:nil view:[AFNConanTheCurrentVC getCurrentVC].view];
+            [MBProgressHUD showError:@"无网络，请检查网络连通情况。"];
             [self ConanNetUnknow];
         }
             break;
         case RealStatusViaWWAN:{
             switch (accessType) {
                 case WWANTypeUnknown:{// maybe iOS6
-                    [AFNConanMBProgressHUD show:@"未知网络，请检查网络连接情况。" icon:nil view:[AFNConanTheCurrentVC getCurrentVC].view];
+                    [MBProgressHUD showError:@"未知网络，请检查网络连接情况。"];
                     [self ConanNetUnknow];
                 }
                     break;
@@ -126,7 +126,6 @@ static AFNConanNetworkManager *conanNetSington;
         }
             break;
         case RealStatusViaWiFi:{
-//            [AFNConanMBProgressHUD show:@"WiFi网络。" icon:nil view:[AFNConanTheCurrentVC getCurrentVC].view];
             [self ConanNetIsChange:@"RealStatusViaWiFi"];
         }
             break;

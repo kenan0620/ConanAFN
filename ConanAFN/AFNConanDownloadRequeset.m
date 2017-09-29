@@ -7,7 +7,7 @@
 //
 
 #import "AFNConanDownloadRequeset.h"
-#import "AFNConanMBProgressHUD+Event.h"
+#import "MBProgressHUD+XYX.h"
 #import "AFNConanEncryption.h"
 #import "AFNConanMacroDefine.h"
 #import "AFNConanResourcePathUrl.h"
@@ -67,7 +67,7 @@
 
     AFNConanLog(@"-----Download-----%ld,%ld",(long)directoryType,(long)fileType);
     if (!downloadList) {
-        [AFNConanMBProgressHUD show:[NSString stringWithFormat:@"暂无资源下载!"] icon:@"" view:[AFNConanTheCurrentVC getCurrentVC].view];
+        [MBProgressHUD showError:[NSString stringWithFormat:@"暂无资源下载!"]];
         return  conanSessionTask;
     }else{
         NSMutableDictionary *filePathCacheDic = [NSMutableDictionary dictionary];

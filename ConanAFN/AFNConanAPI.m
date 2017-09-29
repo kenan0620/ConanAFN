@@ -101,7 +101,6 @@
         apiUrl = [NSString stringWithFormat:@"%@%@",_url,apiUrl];
     }
     if (!downloadFile) {
-        NSLog(@"downloadFile");
         NSMutableDictionary *downloadFilePathManager = [NSMutableDictionary dictionary];
         successBlock(downloadFilePathManager);
     }else{
